@@ -1,0 +1,190 @@
+*{
+    margin:0px;
+    padding:0;
+}
+
+/* Forms the base of navbar */
+
+.header-part-1{
+    min-height: 15vh;
+    width: 100%;
+}
+
+/* Base of the navbar */
+
+.navbar{
+    width: 100vw;
+
+    /* display is flex and related properties */
+
+    display: flex;
+  justify-content: space-between;
+  content: none;
+
+    /* Position is fixed */
+
+  position: fixed;
+  background-color: rgb(255, 231, 207);
+
+}
+
+/* Deals with the logo  */
+
+.navbar-part-1{
+
+    /* Margin and padding of logo */
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Set logo to correct size */
+
+.navbar-icon-image{
+    height : 30px;
+    width : auto;
+    
+}
+
+
+
+
+/* Deals with the links in the middle part of the navbar */
+
+.navbar-part-2{
+
+    /* Margin and padding of the set of links */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    
+
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+.navbar-links{
+
+    /* Sets how the texts of the links are to be displayed */
+
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+      font-weight: 550;
+      text-transform: uppercase;
+      color: #692e00;
+
+
+
+    position: relative;
+      display: block;
+
+    /* Margin and padding of individual links */
+
+      margin: 20px 20px;
+      padding: 10px 20px;
+      
+      /* Part of animation */
+      
+      transition: .5s;
+      z-index: 1;
+
+
+}
+
+.navbar-links::before{
+    content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid #692e00;
+        border-bottom: 2px solid #692e00;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+}
+
+/* Link animation section */
+
+.navbar-links::after{
+    content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #692e00;
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+
+        
+}
+
+.navbar-links:hover{
+    color: rgb(255, 212, 168);
+    
+
+}
+
+.navbar-links:hover::before{
+    transform: scaleY(1);
+          opacity: 1;
+}
+
+.navbar-links:hover::after{
+    transform: scaleY(1);
+          opacity: 1;
+}
+
+
+/* Deals with the login part of the navbar */
+
+.navbar-login{
+    
+    /* Sets how login is supposed to be displayed */
+
+    text-decoration: none;
+    color: #692e00;
+    border: 1.5px solid #692e00;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+      font-weight: 600;
+
+    /* Margin and padding of login button */
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+/* Effects when user hovers over login */
+
+.navbar-login:hover{
+    color: rgb(255, 212, 168);
+    transition-delay: .1s;
+    background-color: #692e00;
+}

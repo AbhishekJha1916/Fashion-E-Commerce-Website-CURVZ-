@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0;
+}
+
+.home-view{
+    min-height: 85vh;
+    width: 100vw;
+    background-color: rgba(255, 212, 168,0.55);
+}
+
+.dotted-collection{
+    height: 128px;
+    width: 128px;
+  background-image: -webkit-repeating-radial-gradient(center center, #692e00, #692e00 1.5px, transparent 1.5px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, #692e00, #692e00 1.5px, transparent 1.5px, transparent 100%);
+  background-size: 16px 16px;
+}
+
+.home-view-shape-1{
+    height:500px;
+    width:450px;
+    background: linear-gradient(135deg, rgb(202, 148, 104) 3%, rgb(236, 173, 110), rgb(202, 148, 104) 97%);
+    border-radius: 0 0 0 125px;
+}
+
+.home-view-shape-2{
+    height:300px;
+    width:300px;
+    background: linear-gradient(rgb(248, 213, 125),rgb(202, 148, 104) );
+    border-radius: 50%;
+}
