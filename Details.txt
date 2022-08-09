@@ -1,9 +1,0 @@
-Fonts - Staatliches (https://fonts.google.com/specimen/Staatliches?query=Staatliches)
-	- Syne (https://fonts.google.com/specimen/Syne?query=Syne)
-
-
-Images - Unsplash (https://unsplash.com/)
-
-
-Icons - Material Icons (https://fonts.google.com/icons)
-	- CDN File (<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded">)
