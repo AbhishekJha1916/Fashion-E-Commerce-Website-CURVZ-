@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 * {
     margin: 0px;
     padding: 0;
@@ -48,9 +51,8 @@
 /* Set logo to correct size */
 
 .navbar-icon-image {
-    height: 30px;
+    height: 25px;
     width: auto;
-
 }
 
 
@@ -69,14 +71,8 @@
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-
-
-
     display: flex;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 .navbar-links {
 
@@ -84,23 +80,18 @@
 
     text-decoration: none;
     font-family: 'Syne', sans-serif;
-    font-size: 14px;
-    font-weight: 550;
+    font-size: 12px;
+    font-weight: 500;
     text-transform: uppercase;
     color: #692e00;
-
-
-
     position: relative;
     display: block;
 
     /* Margin and padding of individual links */
-
     margin: 20px 20px;
     padding: 10px 20px;
 
     /* Part of animation */
-
     transition: .5s;
     z-index: 1;
 
@@ -118,7 +109,7 @@
     border-bottom: 2px solid #692e00;
     transform: scaleY(2);
     opacity: 0;
-    transition: .3s;
+    transition: .2s;
 }
 
 /* Link animation section */
@@ -166,7 +157,7 @@
     color: #692e00;
     border: 1.5px solid #692e00;
     font-family: 'Syne', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
 
     /* Margin and padding of login button */

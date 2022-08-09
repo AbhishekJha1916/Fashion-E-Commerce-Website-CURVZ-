@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
 .home-view {
-    min-height: 85vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(255, 212, 168, 0.55);
-    padding-top: 25px;
+    /* padding-top: 20px; */
     /* position: relative;
     top:0;
     left:0;
@@ -24,39 +26,39 @@
 }
 
 .home-view-shape-1 {
-    height: 500px;
-    width: 450px;
-    background: linear-gradient(135deg, rgb(202, 148, 104) 3%, rgb(236, 173, 110), rgb(202, 148, 104) 97%);
+    margin-top: 40px;
+    margin-left: 45px;
+    height: 430px;
+    width: 400px;
+    /* background: linear-gradient(135deg, rgb(202, 148, 104) 3%, rgb(236, 173, 110), rgb(202, 148, 104) 97%); */
+    background-image: url("../images/Home.jpg");
+    background-size: cover;
     border-radius: 0 0 0 125px;
 }
 
 .home-view-shape-2 {
-    height: 400px;
-    width: 400px;
-    background: linear-gradient(rgb(248, 213, 125), rgb(202, 148, 104));
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(#ffab57, #803300);
     border-radius: 50%;
+    opacity: 70%;
 }
 
-
-
 .home-view-best-style h1 {
-    font-family: 'Lato';
-    font-size: 48px;
+    /* font-family: 'Staatliches', cursive;*/
+    font-family: 'Syne', sans-serif;
+    font-size: 50px;
     color: #692e00;
-    font-weight: 700;
-
-
-
+    font-weight: 400;
     letter-spacing: -3px;
-
-    padding: 0px 250px 25px 0px;
+    padding: 0px 120px 1px 0px;
 }
 
 .home-view-best-style-details p{
-    font-family: 'Syne';
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
     color: #692e00;
-
-    padding: 0px 325px 25px 0px;
+    padding: 0px 267px 15px 0px;
 }
 
 .section-1 {
@@ -73,8 +75,8 @@
 
 .section-1-1 .dotted-collection {
     position: relative;
-    bottom: 50px;
-    right: 230px
+    bottom: 10px;
+    right: 240px
 }
 
 .home-view-button {
@@ -82,34 +84,24 @@
     transition: all 0.65s;
 }
 
-.home-view-button:hover {
-    transform: rotateY(360deg);
-
-}
-
 .home-view-shop-now {
     text-decoration: none;
     color: rgb(255, 212, 168);
-    transition: all 0.65s;
-
-
     width: 125px;
-    padding: 15px 35px 15px 45px;
+    padding: 15px 35px 15px 35px;
     border: 1.5px solid #692e00;
     font-family: 'Syne';
     font-weight: 700;
-
+    font-size: 12px;
     background-color: #692e00;
-
+    box-shadow: 0 0 1px 1px, 0 0 1px 1px;
+    transition: all 150ms ease-in-out;
 }
 
 .home-view-shop-now:hover {
     color: #692e00;
-
-
-    background-color: rgb(255, 212, 168);
-    box-shadow: 0, 0, 10px, 10px, #692e00;
-    border: none;
+    background: transparent;
+    box-shadow: 0 0 10px 0;
 }
 
 .section-1-2 {
@@ -121,19 +113,19 @@
 .section-1-2-1 {
     position: absolute;
     left: 390px;
-    top: 50px
+    top: 80px
 }
 
 .section-1-2-2 {
     position: absolute;
-    left: -60px;
-    top: 325px;
+    left: -10px;
+    top: 309px;
     z-index: -1;
 }
 
 .section-2-1 {
     position: relative;
     top: -125px;
-    left: -75px;
+    left: -50px;
     z-index: -1;
 }
