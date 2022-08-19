@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -235,12 +237,19 @@
 /* Best design available */
 
 .bestdesignavailable {
-    font-family: 'Syne', sans-serif;
+    /* font-family: 'Syne', sans-serif; */
     width: 100%;
     margin-top: -70px;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: whitesmoke;
+}
+
+.bestdesignavailable h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -3;
 }
 .bestdesign-wrap{
     display: flex;
@@ -250,8 +259,9 @@
 }
 .bestdesign-left{
     height: 500px;
-    width: 40%;
-    background: #ffe1bc;
+    width: 100%;
+    background-image: url(../images/bestdesign.jpg) ;
+    background-size: cover;    
     border-radius: 80px 0 0 0;
 }
 .bestdesign-right{
@@ -284,12 +294,24 @@
     width: 800px;
 }
 .bd-info-d h4{
-    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bd-info-d .one{
+    padding-left: 27px;
+}
+
+.bd-info-d .two{
+    padding-left: 18px;
+}
+
+.bd-info-d .three{
+    padding-left: 18px;
 }
 
 .bd-info-d p{
-    font-weight: normal;
-    text-shadow: 1px 0 #000;
+    font-weight: 500;
+    /* text-shadow: 1px 0 #000; */
 }
 .bd-bottom-left{
     position: absolute;
@@ -298,7 +320,7 @@
     bottom: -30px;
     left: -50px;
     background: #ffbb68;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .bd-info{
@@ -309,7 +331,7 @@
     bottom: -2px;
     right: 0px;
     padding: 70px 70px;
-    box-shadow:  -3px 6px 6px rgb(172, 158, 158);
+    box-shadow:  -3px 6px 6px rgba(0, 0, 0, 0.187);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
