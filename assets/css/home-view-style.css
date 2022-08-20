@@ -359,6 +359,7 @@
 
 /* Best design component ends */
 
+
 /* best seller section */
 .best-seller-section {
   background-color: #692e00;
@@ -366,25 +367,26 @@
   height: auto;
 }
 .carousel.slide {
-  width: 300px;
+  width: 400px;
   height: 22rem;
 }
 .card {
-  width: 18rem;
-  height: 22rem;
+  width: 400px;
+  height: 500px;
 }
 .card img {
-  height: 17rem;
+  height: 400px;
+  background-image: url('../images/Shirts.jpg');
+  background-size: cover;
 }
 .carousel-control-prev {
-  margin-left: -3rem;
+  margin-top: 6rem;
+  margin-left: -4rem;
 }
 
 .carousel-control-next {
-  right: -3rem;
-}
-.carousel-indicators {
-  bottom: -2.5rem;
+  margin-top: 6rem;
+  margin-right: -4rem;
 }
 .best-seller-section {
   display: flex;
@@ -396,24 +398,40 @@
   width: 40%;
 }
 .section-body .section-header {
+  font-family: 'Syne', sans-serif;
   color: #ffffff;
-  font-weight: bolder;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 50px;
 }
 .section-description {
+  font-family: 'Syne', sans-serif;
   color: #ffffff;
   text-align: left;
   margin-top: 10px;
 }
 .section-call-to-action {
-  width: 8rem;
+  width: 155px;
   border: 2px solid white;
   text-align: center;
-  margin-top: 2rem;
-  padding: 2%;
+  margin-top: 20px;
+  padding: 11px 11px;
+  cursor: pointer;
+  padding: 15px 35px 15px 35px;
 }
-.section-call-to-action button {
-  border: 0;
+.section-call-to-action a {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
   background-color: inherit;
   color: white;
+}
+
+.section-call-to-action:hover{
+  background-color: rgb(255, 212, 168);
+  border-color: #692e00;
+}
+
+.section-call-to-action:hover a{
+  color: #692e00;
 }

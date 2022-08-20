@@ -23,7 +23,6 @@ Contributors: Abhishek Kumar Jha
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../assets/css/_navbar-style.css" />
     <link rel="stylesheet" href="../assets/css/home-view-style.css" />
@@ -34,32 +33,6 @@ Contributors: Abhishek Kumar Jha
   <body>
     <!-- Section 1 -->
     <header class="header-part-1">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <!-- Icon of Curvz and Link to Homepage -->
-        <div class="navbar-part-1">
-          <a class="navbar-icon" href="index.html">
-            <img
-              class="navbar-icon-image"
-              src="..\assets\images\cc.png"
-              alt="icon"
-            />
-          </a>
-        </div>
-
-        <div class="navbar-part-2">
-          <a class="navbar-links" href="#"> MEN </a>
-          <a class="navbar-links" href="#"> WOMEN </a>
-          <a class="navbar-links" href="#"> KIDS </a>
-          <a class="navbar-links" href="#"> FANCY </a>
-          <a class="navbar-links" href="#"> COLLECTION </a>
-        </div>
-
-        <div class="navbar-part-3">
-          <a class="navbar-login" href="#"> LOGIN </a>
-        </div>
-      </nav>
-    </header>
 
     <div class="home-view">
       <!-- All contents of the home view except circle -->
@@ -196,6 +169,7 @@ Contributors: Abhishek Kumar Jha
       </div>
     </div>
     <!-- best design section ends -->
+
     <!-- for best seller section -->
     <div class="best-seller-section">
     <div class="section-body">
@@ -212,14 +186,14 @@ Contributors: Abhishek Kumar Jha
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, rem quia repellat nesciunt molestiae, aliquid suscipit laudantium 
         </div>
         <div class="section-call-to-action">
-            <button>SEE MORE</button>
+            <a href="">SEE MORE</a>
         </div>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="card">
-                    <img src="../assets/images/ss1.png" class="card-img-top" alt="first slide">
+                    <img src="../assets/images/des1.jpg" class="card-img-top" alt="first slide">
                     <div class="card-body">
                         <div><strong>Curvz Founded</strong></div>
                         <div><del>$1200</del> <strong>$750</strong></div>
@@ -228,7 +202,7 @@ Contributors: Abhishek Kumar Jha
           </div>
           <div class="carousel-item">
                 <div class="card">
-                    <img src="../assets/images/bestdesign.jpg" class="card-img-top" alt="second slide">
+                    <img src="../assets/images/des2.jpg" class="card-img-top" alt="second slide">
                     <div class="card-body">
                     <div><strong>Curvz Founded</strong></div>
                         <div><del>$1200</del> <strong>$750 </strong></div>
@@ -237,7 +211,7 @@ Contributors: Abhishek Kumar Jha
           </div>
           <div class="carousel-item">
             <div class="card">
-                <img src="../assets/images/lehengas.jpg" class="card-img-top" alt="second slide">
+                <img src="../assets/images/des3.jpg" class="card-img-top" alt="second slide">
                 <div class="card-body">
                     <div><strong>Curvz Founded</strong></div>
                     <div><del>$1200</del> <strong>$750</strong></div>
@@ -245,19 +219,30 @@ Contributors: Abhishek Kumar Jha
               </div>
           </div>
         </div>
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleNoWrap" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleNoWrap" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleNoWrap" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+
+
+
+  
+
+
+
+
+        <!-- JavaScrip Files -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
       </div>
   </body>
 </html>
