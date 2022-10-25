@@ -16,7 +16,7 @@
 /* Base of the navbar */
 
 .navbar {
-    width: 100vw;
+    max-width: 100vw;
 
     /* display is flex and related properties */
 
