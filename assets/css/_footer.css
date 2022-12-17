@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
 footer{
+    padding-top: 90px;
     position: relative;
 }
 .footer-part-1{
     height: 35vh;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
@@ -20,7 +25,7 @@ footer{
     position: absolute;
     left: 30vw;
     right: 30vw;
-    top: 28vh;
+    top: 41vh;
     background-color: whitesmoke;
 }
 #social-media-icons{
@@ -30,16 +35,25 @@ footer{
     padding-left: 3vw;
     padding-right: 3vw;
 }
+
+#social-media-icons img{
+    cursor: pointer;
+}
+
 .social-media-images{
     height: 45px;
     width: 45px;
 }
 .footer-part-2{
     height: 50vh;
-    background-color: #692e00;
+    background-color: #000000d9;
     text-align: center;
+    text-decoration: none;
 }
 .footer-part-2 nav{
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
     display: flex;
     justify-content: space-around;
     width: 40vw;
@@ -47,12 +61,25 @@ footer{
     left: 30vw;
     right: 30vw;
     padding-top: 20vh;
+    text-decoration: none;
 }
+
+.footer-part-2 nav a:hover{
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+
 .navbar-link{
     text-decoration: none;
     color: white;
 }
 #copyright{
-    margin-top: 12vh;
-    color: white;
+    font-size: 13px;
+    margin-top: 18vh;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#copyright:hover{
+    color: rgb(122, 122, 122);
 }

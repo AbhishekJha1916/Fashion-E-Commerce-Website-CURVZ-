@@ -9,7 +9,7 @@
 .home-view {
   height: 100vh;
   width: 100%;
-  background-color: rgba(255, 212, 168, 0.55);
+  background-color: rgb(255, 255, 255) 0.55;
   /* padding-top: 20px; */
   /* position: relative;
     top:0;
@@ -22,15 +22,15 @@
   width: 114px;
   background-image: -webkit-repeating-radial-gradient(
     center center,
-    #692e00,
-    #692e00 1.5px,
+    #000000,
+    #000000 1.5px,
     transparent 1.5px,
     transparent 100%
   );
   background-image: repeating-radial-gradient(
     center center,
-    #692e00,
-    #692e00 1.5px,
+    #000000,
+    #000000 1.5px,
     transparent 1.5px,
     transparent 100%
   );
@@ -51,7 +51,7 @@
 .home-view-shape-2 {
   height: 500px;
   width: 500px;
-  background: linear-gradient(#ffab57, #803300);
+  background: linear-gradient(#ffffff, rgb(204, 204, 204));
   border-radius: 50%;
   opacity: 70%;
 }
@@ -59,8 +59,8 @@
 .home-view-best-style h1 {
   /* font-family: 'Staatliches', cursive;*/
   font-family: "Syne", sans-serif;
-  font-size: 50px;
-  color: #692e00;
+  font-size: 60px;
+  color: #000000;
   font-weight: 400;
   letter-spacing: -3px;
   padding: 0px 120px 1px 0px;
@@ -68,9 +68,9 @@
 
 .home-view-best-style-details p {
   font-family: "Syne", sans-serif;
-  font-size: 12px;
-  color: #692e00;
-  padding: 0px 267px 15px 0px;
+  font-size: 14px;
+  color: #000000;
+  padding: 0px 217px 15px 0px;
 }
 
 .section-1 {
@@ -98,10 +98,10 @@
 .home-view-shop-now {
   text-decoration: none;
   /* color: rgb(255, 212, 168); */
-  color: #692e00;
+  color: #000000;
   width: 125px;
   padding: 15px 35px 15px 35px;
-  border: 1.5px solid #692e00;
+  border: 1.5px solid #000000;
   font-family: "Syne";
   font-weight: 700;
   font-size: 12px;
@@ -112,11 +112,12 @@
 }
 
 .home-view-shop-now:hover {
-  color: rgb(255, 212, 168);
+  color: rgb(255, 255, 255);
   /* color: #692e00; */
   /* background: transparent; */
-  background-color: #692e00;
+  background-color: #000000;
   /* box-shadow: 0 0 10px 0; */
+  text-decoration: none;
 }
 
 .section-1-2 {
@@ -183,7 +184,7 @@
 .coll-col img {
   object-fit: fill;
   width: 100%;
-  height: 450px;
+  height: 430px;
   display: block;
 }
 
@@ -224,9 +225,9 @@
 
 .outerbox h3:hover {
   cursor: pointer;
-  background-color: #692e00;
-  color: rgb(255, 212, 168);
-  border-color: #692e00;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-color: #000000;
 }
 
 .dottedcollection {
@@ -338,7 +339,7 @@
   width: 200px;
   bottom: -30px;
   left: -50px;
-  background: #ffbb68;
+  background: #000000;
   opacity: 0.4;
 }
 
@@ -362,11 +363,12 @@
 
 /* best seller section */
 .best-seller-section {
-  background-color: #692e00;
-  padding: 5% 5%;
+  background-color: #000000d9;
+  padding: 5% 10%;
   height: 110vh;
 }
 .carousel.slide {
+  padding-top: 40px;
   width: 400px;
   height: 22rem;
 }
@@ -379,15 +381,7 @@
   background-image: url('../images/Shirts.jpg');
   background-size: cover;
 }
-.carousel-control-prev {
-  margin-top: 5rem;
-  margin-left: -4rem;
-}
 
-.carousel-control-next {
-  margin-top: 6rem;
-  margin-right: -4rem;
-}
 .best-seller-section {
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +408,8 @@
   width: 155px;
   border: 2px solid white;
   text-align: center;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 20px;
   padding: 11px 11px;
   cursor: pointer;
@@ -429,12 +425,14 @@
 }
 
 .section-call-to-action:hover{
-  background-color: rgb(255, 212, 168);
-  border-color: #692e00;
+  background-color: rgb(255, 255, 255);
+  border-color: #000000;
+  text-decoration: none;
 }
 
 .section-call-to-action:hover a{
-  color: #692e00;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* Best Seller Ends */
@@ -456,8 +454,8 @@
 }
 
 .ourProducts img {
-  width: 400px;
-  height: 450px;
+  width: 300px;
+  height: 350px;
   margin: 0;
   padding: 0;
 }
@@ -488,15 +486,22 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 2rem;
+  margin: 4rem;
 }
 
 .postcard {
-  padding: 1%;
+  padding: 12px;
   text-align: left;
-  box-shadow: -5px 5px 5px lightgrey;
+  /* box-shadow: -5px 5px 5px rgb(220, 220, 220); */
   margin: 5px;
   padding: 0;
+  background-color: #ffffff;
+  transition: transform 0.7s;
+}
+
+.postcard:hover{
+  transform: scale(0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
 }
 
 .text-area {
@@ -643,91 +648,3 @@ h3 {
 }
 
 /* Deals of the day ends */
-
-
-/* Testimonial section starts */
-
-.container-test h2{
-  align-items: center;
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 40px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-}
-
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel{
-	margin: 50px auto;
-	padding: 0;
-}
-.carousel-item {
-	color: #999;
-	font-size: 14px;
-  text-align: center;
-	overflow: hidden;
-  min-height: 290px;
-}
-.carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	/* width: 100%; */
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #db584e;
-}
-.carousel .carousel-control {
-  height: 40px;
-  margin-top: -20px;
-  top: 50%;
-	background: none;
-}
-.carousel-control span {
-  font-size: 68px;
-	line-height: 42px;
-  position: absolute;
-  display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel .carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 10px;
-	height: 10px;
-	margin: 1px 3px;
-	border-radius: 50%;
-}
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-
-/* Testimonial section ends */
