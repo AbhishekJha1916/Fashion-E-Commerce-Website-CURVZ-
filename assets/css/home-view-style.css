@@ -43,7 +43,7 @@
   height: 430px;
   width: 400px;
   /* background: linear-gradient(135deg, rgb(202, 148, 104) 3%, rgb(236, 173, 110), rgb(202, 148, 104) 97%); */
-  background-image: url("../images/Home.jpg");
+  background-image: url("../images/Home1.jpg");
   background-size: cover;
   border-radius: 0 0 0 125px;
 }
@@ -278,7 +278,7 @@
   box-sizing: border-box;
 }
 .bestdesign-left {
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-image: url(../images/bestdesign.jpg);
   background-size: cover;
@@ -302,14 +302,14 @@
 
 /* title */
 .bestdesign-right-content-t {
-  padding: 50px 100px 0px 150px;
+  padding: 80px 100px 0px 150px;
   line-height: 0.1rem;
   font-size: 50px;
 }
 
 /*description */
 .bestdesign-right-content-d {
-  padding: 0 150px;
+  padding: 10px 150px;
   line-height: 1.3rem;
   width: 800px;
 }
@@ -319,14 +319,17 @@
 
 .bd-info-d .one {
   padding-left: 27px;
+  padding-top: 20px;
 }
 
 .bd-info-d .two {
   padding-left: 18px;
+  padding-top: 20px;
 }
 
 .bd-info-d .three {
   padding-left: 18px;
+  padding-top: 20px;
 }
 
 .bd-info-d p {
@@ -497,6 +500,8 @@
   padding: 0;
   background-color: #ffffff;
   transition: transform 0.7s;
+  border: 2px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0 0 1% 1%;
 }
 
 .postcard:hover{
