@@ -46,7 +46,7 @@ footer{
 }
 .footer-part-2{
     height: 50vh;
-    background-color: #000000d9;
+    background-color: #692e00;
     text-align: center;
     text-decoration: none;
 }
@@ -66,7 +66,7 @@ footer{
 
 .footer-part-2 nav a:hover{
     text-decoration: none;
-    color: rgb(122, 122, 122);
+    color: rgb(255, 212, 168);
 }
 
 .navbar-link{
@@ -81,5 +81,5 @@ footer{
 }
 
 #copyright:hover{
-    color: rgb(122, 122, 122);
+    color: rgb(255, 212, 168);
 }

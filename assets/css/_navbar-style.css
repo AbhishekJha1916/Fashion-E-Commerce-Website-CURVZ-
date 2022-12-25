@@ -12,7 +12,7 @@
 .header-part-1 {
     min-height: 15vh;
     width: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
 }
 
 /* Base of the navbar */
@@ -32,7 +32,7 @@
 
     position: fixed;
     z-index: 100;
-    background-color: whitesmoke;
+    background-color: rgb(255, 231, 207);
 
 }
 
@@ -87,7 +87,7 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #000000;
+    color: #692e00;
     position: relative;
     display: block;
 
@@ -109,8 +109,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* border-top: 2px solid black; */
-    border-bottom: 2px solid black;
+    border-top: 2px solid #692e00;
+    border-bottom: 2px solid #692e00;
     transform: scaleY(2);
     opacity: 0;
     transition: .4s;
@@ -120,16 +120,20 @@
 
 .navbar-links::after {
     content: '';
-    width: 0%;
-    height: 2px;
-    background: black;
-    display: block;
-    margin: auto;
-    transition: 0.3s;  
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #692e00;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+    z-index: -1;  
 }
 
 .navbar-links:hover {
-    color: black;
+    color: rgb(255, 212, 168);
     text-decoration: none;
 }
 
@@ -151,8 +155,8 @@
     /* Sets how login is supposed to be displayed */
 
     text-decoration: none;
-    color: black;
-    border: 1.5px solid black;
+    color: #692e00;
+    border: 1.5px solid #692e00;
     font-family: 'Syne', sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -173,9 +177,9 @@
 /* Effects when user hovers over login */
 
 .navbar-login:hover {
-    color: white;
+    color: rgb(255, 212, 168);
     transition-delay: .1s;
-    background-color: black;
+    background-color: #692e00;
     text-decoration: none;
 }
 

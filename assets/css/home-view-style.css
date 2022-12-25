@@ -9,7 +9,7 @@
 .home-view {
   height: 100vh;
   width: 100%;
-  background-color: rgb(255, 255, 255) 0.55;
+  background-color: rgba(255, 212, 168, 0.55);
   /* padding-top: 20px; */
   /* position: relative;
     top:0;
@@ -22,15 +22,15 @@
   width: 114px;
   background-image: -webkit-repeating-radial-gradient(
     center center,
-    #000000,
-    #000000 1.5px,
+    #692e00,
+    #692e00 1.5px,
     transparent 1.5px,
     transparent 100%
   );
   background-image: repeating-radial-gradient(
     center center,
-    #000000,
-    #000000 1.5px,
+    #692e00,
+    #692e00 1.5px,
     transparent 1.5px,
     transparent 100%
   );
@@ -43,7 +43,7 @@
   height: 430px;
   width: 400px;
   /* background: linear-gradient(135deg, rgb(202, 148, 104) 3%, rgb(236, 173, 110), rgb(202, 148, 104) 97%); */
-  background-image: url("../images/Home1.jpg");
+  background-image: url("../images/Home.jpg");
   background-size: cover;
   border-radius: 0 0 0 125px;
 }
@@ -51,7 +51,7 @@
 .home-view-shape-2 {
   height: 500px;
   width: 500px;
-  background: linear-gradient(#ffffff, rgb(204, 204, 204));
+  background: linear-gradient(#ffab57, #803300);
   border-radius: 50%;
   opacity: 70%;
 }
@@ -60,7 +60,7 @@
   /* font-family: 'Staatliches', cursive;*/
   font-family: "Syne", sans-serif;
   font-size: 60px;
-  color: #000000;
+  color: #692e00;
   font-weight: 400;
   letter-spacing: -3px;
   padding: 0px 120px 1px 0px;
@@ -69,7 +69,7 @@
 .home-view-best-style-details p {
   font-family: "Syne", sans-serif;
   font-size: 14px;
-  color: #000000;
+  color: #692e00;
   padding: 0px 217px 15px 0px;
 }
 
@@ -98,10 +98,10 @@
 .home-view-shop-now {
   text-decoration: none;
   /* color: rgb(255, 212, 168); */
-  color: #000000;
+  color: #692e00;
   width: 125px;
   padding: 15px 35px 15px 35px;
-  border: 1.5px solid #000000;
+  border: 1.5px solid #692e00;
   font-family: "Syne";
   font-weight: 700;
   font-size: 12px;
@@ -112,10 +112,10 @@
 }
 
 .home-view-shop-now:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 212, 168);
   /* color: #692e00; */
   /* background: transparent; */
-  background-color: #000000;
+  background-color: #692e00;
   /* box-shadow: 0 0 10px 0; */
   text-decoration: none;
 }
@@ -225,9 +225,9 @@
 
 .outerbox h3:hover {
   cursor: pointer;
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  border-color: #000000;
+  background-color: #692e00;
+  color: rgb(255, 212, 168);
+  border-color: #692e00;
 }
 
 .dottedcollection {
@@ -342,7 +342,7 @@
   width: 200px;
   bottom: -30px;
   left: -50px;
-  background: #000000;
+  background: #ffbb68;
   opacity: 0.4;
 }
 
@@ -366,7 +366,7 @@
 
 /* best seller section */
 .best-seller-section {
-  background-color: #000000d9;
+  background-color: #692e00;
   padding: 5% 10%;
   height: 110vh;
 }
@@ -428,13 +428,13 @@
 }
 
 .section-call-to-action:hover{
-  background-color: rgb(255, 255, 255);
-  border-color: #000000;
+  background-color: rgb(255, 231, 207);
+  border-color: #692e00;
   text-decoration: none;
 }
 
 .section-call-to-action:hover a{
-  color: #000000;
+  color: #692e00;
   text-decoration: none;
 }
 
