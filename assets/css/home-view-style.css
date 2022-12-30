@@ -9,7 +9,7 @@
 .home-view {
   height: 100vh;
   width: 100%;
-  background-color: rgba(255, 212, 168, 0.55);
+  background-color: #5A1413;
   /* padding-top: 20px; */
   /* position: relative;
     top:0;
@@ -22,15 +22,15 @@
   width: 114px;
   background-image: -webkit-repeating-radial-gradient(
     center center,
-    #692e00,
-    #692e00 1.5px,
+    #C6B79B,
+    #C6B79B 1.5px,
     transparent 1.5px,
     transparent 100%
   );
   background-image: repeating-radial-gradient(
     center center,
-    #692e00,
-    #692e00 1.5px,
+    #C6B79B,
+    #C6B79B 1.5px,
     transparent 1.5px,
     transparent 100%
   );
@@ -51,26 +51,26 @@
 .home-view-shape-2 {
   height: 500px;
   width: 500px;
-  background: linear-gradient(#ffab57, #803300);
+  background: linear-gradient(rgb(255, 228, 200), #C6B79B);
   border-radius: 50%;
-  opacity: 70%;
+  opacity: 100%;
 }
 
 .home-view-best-style h1 {
   /* font-family: 'Staatliches', cursive;*/
   font-family: "Syne", sans-serif;
   font-size: 60px;
-  color: #692e00;
+  color: #C6B79B;
   font-weight: 400;
   letter-spacing: -3px;
-  padding: 0px 120px 1px 0px;
+  padding: 0px 110px 1px 0px;
 }
 
 .home-view-best-style-details p {
   font-family: "Syne", sans-serif;
-  font-size: 14px;
-  color: #692e00;
-  padding: 0px 217px 15px 0px;
+  font-size: 17px;
+  color: #C6B79B;
+  padding: 0px 100px 15px 0px;
 }
 
 .section-1 {
@@ -98,13 +98,13 @@
 .home-view-shop-now {
   text-decoration: none;
   /* color: rgb(255, 212, 168); */
-  color: #692e00;
+  color: #C6B79B;
   width: 125px;
   padding: 15px 35px 15px 35px;
-  border: 1.5px solid #692e00;
+  border: 1.5px solid #C6B79B;
   font-family: "Syne";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
   background: transparent;
   /* background-color: #692e00; */
   /* box-shadow: 0 0 1px 1px, 0 0 1px 1px; */
@@ -112,10 +112,11 @@
 }
 
 .home-view-shop-now:hover {
-  color: rgb(255, 212, 168);
+  color: rgb(255, 255, 255);
   /* color: #692e00; */
   /* background: transparent; */
-  background-color: #692e00;
+  background-color: transparent;
+  border-color: #ffffff;
   /* box-shadow: 0 0 10px 0; */
   text-decoration: none;
 }
@@ -225,9 +226,9 @@
 
 .outerbox h3:hover {
   cursor: pointer;
-  background-color: #692e00;
+  background-color: #5A1413;
   color: rgb(255, 212, 168);
-  border-color: #692e00;
+  border-color: #5A1413;
 }
 
 .dottedcollection {
@@ -342,7 +343,7 @@
   width: 200px;
   bottom: -30px;
   left: -50px;
-  background: #ffbb68;
+  background: #5A1413;
   opacity: 0.4;
 }
 
@@ -366,7 +367,7 @@
 
 /* best seller section */
 .best-seller-section {
-  background-color: #692e00;
+  background-color: #5A1413;
   padding: 5% 10%;
   height: 110vh;
 }
@@ -397,19 +398,19 @@
 }
 .section-body .section-header {
   font-family: 'Syne', sans-serif;
-  color: #ffffff;
+  color: #C6B79B;
   font-weight: 400;
   font-size: 50px;
 }
 .section-description {
   font-family: 'Syne', sans-serif;
-  color: #ffffff;
+  color: #C6B79B;
   text-align: left;
   margin-top: 10px;
 }
 .section-call-to-action {
   width: 155px;
-  border: 2px solid white;
+  border: 2px solid #C6B79B;
   text-align: center;
   align-items: center;
   justify-content: space-around;
@@ -424,17 +425,17 @@
   font-weight: 700;
   text-decoration: none;
   background-color: inherit;
-  color: white;
+  color: #C6B79B;
 }
 
 .section-call-to-action:hover{
-  background-color: rgb(255, 231, 207);
-  border-color: #692e00;
+  background-color: transparent;
+  border-color: #ffffff;
   text-decoration: none;
 }
 
 .section-call-to-action:hover a{
-  color: #692e00;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -579,8 +580,8 @@ h3 {
 .dealsDay button {
   min-height: 4rem;
   min-width: 12rem;
-  color: white;
-  background-color: black;
+  color: #C6B79B;
+  background-color: #5A1413;
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
   font-weight: 700;
@@ -589,10 +590,11 @@ h3 {
 .dealsDay button:hover{
   min-height: 4rem;
   min-width: 12rem;
-  color: black;
-  background-color: white;
+  color: #5A1413;
+  background-color: #C6B79B;
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
+  border-color: #5A1413;
 }
 
 .deals-container {
@@ -603,7 +605,7 @@ h3 {
   max-width: 100%;
   padding: 2rem;
   margin: 2rem;
-  background-color: #d4d4d4;
+  background-color: #C6B79B;
 }
 
 .left-box {

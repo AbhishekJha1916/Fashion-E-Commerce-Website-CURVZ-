@@ -32,7 +32,8 @@
 
     position: fixed;
     z-index: 100;
-    background-color: #800000;
+    background-color: #5A1413;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
 }
 
