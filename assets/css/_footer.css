@@ -26,7 +26,7 @@ footer{
     left: 30vw;
     right: 30vw;
     top: 41vh;
-    background-color: whitesmoke;
+    background-color: #C6B79B;
 }
 #social-media-icons{
     display: flex;
@@ -46,7 +46,7 @@ footer{
 }
 .footer-part-2{
     height: 50vh;
-    background-color: #692e00;
+    background-color: #800000;
     text-align: center;
     text-decoration: none;
 }
@@ -66,20 +66,20 @@ footer{
 
 .footer-part-2 nav a:hover{
     text-decoration: none;
-    color: rgb(255, 212, 168);
+    color: #ffffff;
 }
 
 .navbar-link{
     text-decoration: none;
-    color: white;
+    color: #C6B79B;
 }
 #copyright{
     font-size: 13px;
     margin-top: 18vh;
-    color: whitesmoke;
+    color: #C6B79B;
     cursor: pointer;
 }
 
 #copyright:hover{
-    color: rgb(255, 212, 168);
+    color: #ffffff;
 }
