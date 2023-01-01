@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-view {
+    height: 100vh;
+    width: 100%;
+    background-color: #5A1413;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-1-1 {
+    width: 50%;
+    margin: 150px 0px 25px 100px;
+    padding-right: 150px;
+}
+
+.section-1-1 video {
+    padding-left: 20px;
+}
+
+.section-1-2 {
+    position: relative;
+    right: 80px;
+    top: 215px;
+}
+
+.section-1-2 h1 {
+    font-size: 60px;
+    color: #C6B79B;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+}
+
+.section-1-2 p {
+    font-family: "Syne", sans-serif;
+    font-size: 17px;
+    color: #C6B79B;
+    padding: 10px 100px 55px 0px;
+}
+
+.home-view-shop-now {
+    text-decoration: none;
+    /* color: rgb(255, 212, 168); */
+    color: #C6B79B;
+    width: 125px;
+    padding: 15px 35px 15px 35px;
+    border: 1.5px solid #C6B79B;
+    font-family: "Syne";
+    font-weight: 700;
+    font-size: 15px;
+    background: transparent;
+    /* background-color: #692e00; */
+    /* box-shadow: 0 0 1px 1px, 0 0 1px 1px; */
+    /* transition: all 150ms ease-in-out; */
+}
+
+.home-view-shop-now:hover {
+    color: rgb(255, 255, 255);
+    /* color: #692e00; */
+    /* background: transparent; */
+    background-color: transparent;
+    border-color: #ffffff;
+    /* box-shadow: 0 0 10px 0; */
+    text-decoration: none;
+}
+
+.dotted-collection {
+    height: 114px;
+    width: 114px;
+    background-image: -webkit-repeating-radial-gradient(center center,
+            #C6B79B,
+            #C6B79B 1.5px,
+            transparent 1.5px,
+            transparent 100%);
+    background-image: repeating-radial-gradient(center center,
+            #C6B79B,
+            #C6B79B 1.5px,
+            transparent 1.5px,
+            transparent 100%);
+    background-size: 19px 19px;
+}
+
+.section-1 .dotted-collection {
+    position: relative;
+    bottom: 10px;
+    top: 500px;
+}

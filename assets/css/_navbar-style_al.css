@@ -184,11 +184,20 @@
 /* ------------------------------------------------------------------------------------------------------- */
 .navbar-3{
     margin: 0px 20px;
-    margin-right: auto;
-    width:16px; 
-    height:16px;
+    margin-right: 45px;
+    height:28px;
     color: #C6B79B;
     /* padding: 10px 20px;  */
+    cursor: pointer;
+}
+
+.navbar-3-shop{
+    margin: 0px 20px;
+    margin-right: auto;
+    height:25px;
+    color: #C6B79B;
+    /* padding: 10px 20px;  */
+    cursor: pointer;
 }
 
 .navbar-part-3{
@@ -223,8 +232,9 @@
 }
 .search-icon{
     width: auto;
-    height: 15px;
+    height: 25px;
     color:  #C6B79B;
+    cursor: pointer;
 }
 
 
