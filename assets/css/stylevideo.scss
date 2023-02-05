@@ -1,0 +1,74 @@
+$color_1: var(--color-white);
+$color_2: var(--color-cream);
+$font-family_1: 'Open Sans', sans-serif;
+$background-color_1: var(--color-brown);
+$background-color_2: transparent;
+$background-color_3: var(--color-cream);
+
+/* style for the STYLE VIDEO SECTION */
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+
+&:root {
+	--color-brown: #692E00;
+	--color-white: white;
+	--color-cream: rgb(255, 251, 243);
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* style for the entire box */
+.outerbox {
+	width: 100%;
+	height: auto;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	position: relative;
+}
+
+/* style for the aside section in the box */
+.asidetext {
+	width: 28%;
+	padding-left: 7%;
+	margin-top: 7.5rem;
+	height: auto;
+	display: inline-block;
+
+	/* heading of the aside section */
+	h1 {
+		color: $color_1;
+		font-size: 3rem;
+		font-weight: 300;
+		margin-bottom: 0px;
+	}
+
+	/* paragraph in the aside section */
+	p {
+		color: $color_2;
+		font-weight: 300;
+		margin-right: 4rem;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		font-size: 0.9rem;
+	}
+	
+	/* button in the aside section */
+	button {
+		background-color: $background-color_2;
+		border: 1px solid var(--color-cream);
+		color: $color_2;
+		padding: 1rem 4rem;
+		font-weight: bolder;
+	}
+}
+
+/* video section */
+.video {
+	display: inline-block;
+	background-color: $background-color_3;
+	width: 56%;
+	height: 75vh;
+	margin: 4rem 0rem 6rem 0rem;
+	vertical-align: top;
+}
