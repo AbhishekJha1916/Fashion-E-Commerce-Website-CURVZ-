@@ -1,45 +1,54 @@
-footer{
-    position: relative;
-}
-.footer-part-1{
-    height: 35vh;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-}
-.footer-images-1{
-    width: 20vw;
-}
-.footer-images-2{
-    height: 35vh;
-    width: 19vw;
-}
-.social{
-    width: 40vw;
-    height: 14vh;
-    position: absolute;
-    left: 30vw;
-    right: 30vw;
-    top: 28vh;
-    background-color: whitesmoke;
-}
-#social-media-icons{
-    display: flex;
-    justify-content:space-around;
-    padding-top: 3.7vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-.social-media-images{
-    height: 45px;
-    width: 45px;
-}
-.footer-part-2{
-    height: 50vh;
-    background-color: #692e00;
-    text-align: center;
-}
-.footer-part-2 nav{
+@import "https://fonts.googleapis.com/css2?family=Staatliches&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
+footer {
+  padding-top: 90px;
+  position: relative; }
+
+.footer-part-1 {
+  height: 35vh;
+  background-color: white;
+  display: flex;
+  justify-content: center; }
+
+.footer-images-1 {
+  width: 20vw; }
+
+.footer-images-2 {
+  height: 35vh;
+  width: 19.3vw; }
+
+.social {
+  width: 40vw;
+  height: 14vh;
+  position: absolute;
+  left: 30vw;
+  right: 30vw;
+  top: 41vh;
+  background-color: #C6B79B; }
+
+#social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.7vh;
+  padding-left: 3vw;
+  padding-right: 3vw; }
+  #social-media-icons img {
+    cursor: pointer; }
+
+.social-media-images {
+  height: 45px;
+  width: 45px; }
+
+.footer-part-2 {
+  height: 50vh;
+  background-color: #5A1413;
+  text-align: center;
+  text-decoration: none; }
+  .footer-part-2 nav {
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
     display: flex;
     justify-content: space-around;
     width: 40vw;
@@ -47,12 +56,19 @@ footer{
     left: 30vw;
     right: 30vw;
     padding-top: 20vh;
-}
-.navbar-link{
-    text-decoration: none;
-    color: white;
-}
-#copyright{
-    margin-top: 12vh;
-    color: white;
-}
+    text-decoration: none; }
+    .footer-part-2 nav a:hover {
+      text-decoration: none;
+      color: #ffffff; }
+
+.navbar-link {
+  text-decoration: none;
+  color: #C6B79B; }
+
+#copyright {
+  font-size: 13px;
+  margin-top: 18vh;
+  color: #C6B79B;
+  cursor: pointer; }
+  #copyright:hover {
+    color: #ffffff; }

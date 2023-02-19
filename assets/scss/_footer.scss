@@ -1,0 +1,89 @@
+$color_1: #ffffff;
+$color_2: #C6B79B;
+$font-family_1: 'Syne', sans-serif;
+$background-color_1: rgb(255, 255, 255);
+$background-color_2: #C6B79B;
+$background-color_3: #5A1413;
+
+@import "https://fonts.googleapis.com/css2?family=Staatliches&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
+
+footer {
+	padding-top: 90px;
+	position: relative;
+}
+.footer-part-1 {
+	height: 35vh;
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: center;
+}
+.footer-images-1 {
+	width: 20vw;
+}
+.footer-images-2 {
+	height: 35vh;
+	width: 19.3vw;
+}
+.social {
+	width: 40vw;
+	height: 14vh;
+	position: absolute;
+	left: 30vw;
+	right: 30vw;
+	top: 41vh;
+	background-color: $background-color_2;
+}
+#social-media-icons {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3.7vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	img {
+		cursor: pointer;
+	}
+}
+.social-media-images {
+	height: 45px;
+	width: 45px;
+}
+.footer-part-2 {
+	height: 50vh;
+	background-color: $background-color_3;
+	text-align: center;
+	text-decoration: none;
+	nav {
+		font-family: $font-family_1;
+		font-weight: 500;
+		font-size: 12px;
+		display: flex;
+		justify-content: space-around;
+		width: 40vw;
+		position: relative;
+		left: 30vw;
+		right: 30vw;
+		padding-top: 20vh;
+		text-decoration: none;
+		a {
+			&:hover {
+				text-decoration: none;
+				color: $color_1;
+			}
+		}
+	}
+}
+.navbar-link {
+	text-decoration: none;
+	color: $color_2;
+}
+#copyright {
+	font-size: 13px;
+	margin-top: 18vh;
+	color: $color_2;
+	cursor: pointer;
+	&:hover {
+		color: $color_1;
+	}
+}

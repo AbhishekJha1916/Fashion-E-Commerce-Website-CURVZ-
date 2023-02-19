@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link rel="stylesheet" href="/css/layout.css" />
+
+  <!-- Style content that we want to implement -->
+  <%- style %>
+  <title>Curvz</title>
+</head>
+
+<body>
+    <%- include('_header_bl');%>
+    <!-- Variable content that we want to show -->
+    <%- body %>
+    <%- include('_footer');%>
+    
+    <!-- Script content that we want to execute -->
+    <%- script %>
+</body>
+
+</html>

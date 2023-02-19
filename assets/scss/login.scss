@@ -1,0 +1,84 @@
+$color_1: white;
+$color_2: eaa055;
+$font-family_1: "Ubuntu", sans-serif;
+$background-color_1: #dcdcdc;
+$background-color_2: black;
+$background-color_3: #eaa055;
+$background-color_4: white;
+
+* {
+	font-family: $font-family_1;
+}
+img {
+	margin: auto 1%;
+}
+.major {
+	display: inline-block;
+	width: 65%;
+}
+.center {
+	text-align: center;
+}
+input {
+	display: block;
+	margin: 1% auto;
+	background-color: $background-color_1;
+	border-radius: 25px;
+	width: 50%;
+	height: 50px;
+	&::placeholder {
+		font-size: large;
+	}
+}
+.minor {
+	background-image: url("Background.jpeg");
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	color: $color_1;
+}
+hr {
+	width: 50%;
+	display: inline-block;
+}
+#or {
+	position: relative;
+	&::before {
+		content: "";
+		height: 2px;
+		width: 20%;
+		background-color: $background-color_2;
+		position: absolute;
+		top: 50%;
+		right: 28%;
+	}
+	&::after {
+		content: "";
+		height: 2px;
+		width: 20%;
+		background-color: $background-color_2;
+		position: absolute;
+		top: 50%;
+		left: 28%;
+	}
+}
+#btn1 {
+	background-color: $background-color_3;
+	font-size: large;
+	font-weight: bold;
+	width: 20%;
+	padding: 2%;
+	color: $color_1;
+	border-radius: 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#btn2 {
+	background-color: $background-color_4;
+	font-size: large;
+	font-weight: bold;
+	width: 20%;
+	padding: 2%;
+	color: $color_2;
+	border-radius: 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
