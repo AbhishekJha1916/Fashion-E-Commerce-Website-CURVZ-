@@ -1,0 +1,41 @@
+#part-2-3{
+    color: white;
+    font-size: 17.5px;
+    text-align: center;
+    margin: 10px auto 5px auto;
+}
+
+.part-1{
+    height: auto;
+    min-height: 100vh;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.input{
+    width:30vw;
+}
+
+#tnc{
+    color: #888;
+    font-size:14px;
+    display: block;
+    padding-left: 20px;
+
+    width:30vw;
+    text-align: justify;
+}
+input[type="checkbox"] {
+    margin-left: -20px;
+}
+
+.tc-links{
+    color: rgb(105, 138, 255);
+}
+
