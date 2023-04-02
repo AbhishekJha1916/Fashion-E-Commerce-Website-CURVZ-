@@ -5,6 +5,7 @@
     --alice-blue: #f8f9fa;
     --carribean-green: #5A1413;
     --gray: #ededed;
+    --sidebar-color:#b08f8e;
 }
 *{
     padding: 0;
@@ -230,6 +231,10 @@ img{
 
 
 
+#sidebar{
+    position: absolute;
+    left:10000px
+}
 
 
 /* Media Queries */
@@ -242,6 +247,7 @@ img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    
 }
 @media screen and (min-width: 1200px){
     .product-items{
@@ -258,7 +264,7 @@ img{
 
 @media screen and (min-width: 1336px){
     .product-items{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .product-collection-wrapper{
         display: grid;
@@ -270,4 +276,74 @@ img{
     .product-col-left{
         height: 121.5vh;
     }
+    .container{
+        width: 70vw;
+        margin-left: 25vw;
+    }
+
+    /* Sidebar section  starts here */
+
+    #sidebar{
+        position:fixed;
+        margin: 5vh auto 0 auto;
+        color:var(--sidebar-color);
+        width: 25vw;
+        overflow-y: auto;
+        left:0;
+        height:80vh;
+    }
+    .sidebar-headers,#sidebar-clothes, #sidebar-reset{
+        margin:0 2.5vw 0 4vw;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .sidebar-headers{
+        
+        padding-bottom: max(10px,4vh);
+        padding-top: max(10px,4vh);
+        border-bottom: 1px solid var(--sidebar-color);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height:25px;
+        align-items: center;
+    }
+    .sidebar-headers:nth-of-type(1), .sidebar-headers:nth-of-type(3){
+        
+        padding-bottom: max(4px,2vh);
+        border-bottom: 1px solid var(--sidebar-color);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height:25px;
+    }
+    .sidebar-links{
+        text-decoration: none;
+        color:var(--sidebar-color);
+        padding: 7.5px 0; 
+    }
+    #sidebar-clothes{
+        display: flex;
+        flex-direction: column;
+        margin-top: min(20px, 6vh);
+        margin-bottom: min(35px,10vh);
+    }
+    #sidebar-reset{
+        margin-top: max(10px, 4vh);
+        color:#ded0d0
+    }
+
+    /* Sidebar section ends here */
+
+    /* Section to rectify starts */
+    .product-col-r-bottom .flex{
+        padding-bottom: 0 ;
+    }
+    .product-col-r-bottom .btn-dark{
+        margin-bottom: 1rem;
+    }
+    .product-col-r-bottom .sm-title{
+        padding: 0;
+    } 
+    /* Section to rectify ends */
 }
