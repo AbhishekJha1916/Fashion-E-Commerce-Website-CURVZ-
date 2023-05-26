@@ -11,7 +11,7 @@
 
 /* Base of the navbar */
 .navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   content: none;
@@ -19,8 +19,7 @@
   align-items: center;
   position: fixed;
   z-index: 100;
-  background-color: #5A1413;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
+  background-color: #5A1413; }
 
 /* Deals with the logo  */
 .navbar-part-1 {
