@@ -1,91 +1,71 @@
-.major{
-    display: inline-block;
-    width: 50%;
-}
+.major {
+  display: inline-block;
+  width: 50%; }
 
+@media screen and (min-width: 992px) {
+  .center {
+    padding: 12.5vh 17.5vw; } }
 
-@media screen and (min-width:992px) {
-    .center{
-        padding: 12.5vh 17.5vw;
-    }
-    
-}
+#fb-icon {
+  width: 4vw;
+  height: auto; }
 
-#fb-icon{
-    width: 4vw;
-    height:auto;
-}
+#g-icon {
+  width: 3vw;
+  height: auto; }
 
-#g-icon{
-    width: 3vw;
-    height:auto;
-}
+#l-icon {
+  width: 3.5vw;
+  height: auto; }
 
-#l-icon{
-    width: 3.5vw;
-    height:auto;
-}
+.icons {
+  margin: 0.5vw; }
 
-.icons{
-    margin: 0.5vw;
-}
-
-.input{
-    display: block;
-    background-color: #dcdcdc;
-    border-radius: 25px;
-    width: 100%;
-    height: 50px;
-    margin-top: 1%;
-    border: none;
-    padding: 1.5vw;
-    margin: 2vw auto;
-}
+.input {
+  display: block;
+  background-color: #dcdcdc;
+  border-radius: 25px;
+  width: 100%;
+  height: 50px;
+  margin-top: 1%;
+  border: none;
+  padding: 1.5vw;
+  margin: 2vw auto; }
 
 /* input::placeholder{
     font-size: large;
 } */
-
-.minor{
-    background-image: url("Background.jpeg");
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-}
+.minor {
+  background-image: url("../images/Background.jpeg");
+  width: 33%;
+  display: inline-block;
+  text-align: center; }
 
 .text-divider {
-    display: flex;
-    align-items: center;
-}
+  display: flex;
+  align-items: center; }
 
 .text-divider::before,
 .text-divider::after {
-content: '';
-height: 2px;
-background-color: black;
-flex-grow: 1;
-}
+  content: '';
+  height: 2px;
+  background-color: black;
+  flex-grow: 1; }
 
 .text-divider {
   display: flex;
   align-items: center;
-  --text-divider-gap: 1rem;
-}
+  --text-divider-gap: 1rem; }
 
 .text-divider::before,
 .text-divider::after {
   content: '';
   height: 1px;
   background-color: black;
-  flex-grow: 1;
-}
+  flex-grow: 1; }
 
 .text-divider::before {
-  margin-right: var(--text-divider-gap);
-}
+  margin-right: var(--text-divider-gap); }
 
 .text-divider::after {
-  margin-left: var(--text-divider-gap);
-}
-
-
+  margin-left: var(--text-divider-gap); }

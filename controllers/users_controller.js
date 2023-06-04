@@ -3,20 +3,20 @@ const User = require("../models/users");
 
 // Rendering the sign up page
 module.exports.signup = function (req, res) {
-    if (req.isAuthenticated()) {
-        return res.redirect("/");
-    }
-    return res.render("sign_up", {
+    // if (req.isAuthenticated()) {
+    //     return res.redirect("/");
+    // }
+    return res.render("authentication/sign_up", {
         title: "Sign up",
     });
 };
 
 // Rendering the login page
 module.exports.signin = function (req, res) {
-    if (req.isAuthenticated()) {
-        return res.redirect("/");
-    }
-    return res.render("login", {
+    // if (req.isAuthenticated()) {
+    //     return res.redirect("/");
+    // }
+    return res.render("authentication/login", {
         title: "Sign in",
     });
 };

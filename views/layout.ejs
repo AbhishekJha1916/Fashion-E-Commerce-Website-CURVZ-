@@ -15,10 +15,16 @@
 </head>
 
 <body>
-    <%- include('./components/_header_bl');%>
+    <% if(!(title === "Sign up" || title === "Sign in") ) {%>
+      <%- include('./components/_header_bl');%>
+      <%}%>
+    
     <!-- Variable content that we want to show -->
     <%- body %>
-    <%- include('./components/_footer');%>
+    <% if(!(title === "Sign up" || title === "Sign in") ) {%>
+      <%- include('./components/_footer');%>
+      <%}%>
+    
     
     <!-- Script content that we want to execute -->
     <%- script %>
