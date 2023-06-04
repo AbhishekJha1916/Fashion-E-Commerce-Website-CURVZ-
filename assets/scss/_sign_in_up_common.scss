@@ -1,0 +1,111 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#logo{
+    height: auto;
+    width: 150px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.part-2{
+    background-image: url(../images/Image_sign_up.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 5vw;
+}
+
+.part-2-1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.part-2-2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+@media screen and (min-width:992px) {
+    #logo{
+        padding: 30px 0 0 30px;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    #logo{
+        margin: 10px auto;
+        padding: 5px;
+        display:block;
+    }
+    
+}
+
+#main-btn,
+#side-btn{
+    width: 15vw;
+    border: none;
+    padding: 1.5vh 1vw;
+    margin: 1.5vw auto;
+    
+    border-radius: 25px;
+
+    box-shadow: 0 5px 10px gray;
+}
+
+#main-btn{
+    color:white;
+    background-color: rgb(255, 155, 54);
+    border: 2px solid white;
+}
+
+#main-btn:hover{
+    color:rgb(255, 155, 54);
+    border: 2px solid rgb(255, 155, 54);
+    background-color: white;
+    box-shadow: 5px 10px 15px rgb(255, 155, 54);
+}
+
+#side-btn{
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    color: #444;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#side-btn:hover{
+    border: 2px solid rgb(255, 155, 54);
+    color:rgb(255, 155, 54);
+}
+
+.input{
+    display: block;
+    background-color: #dcdcdc;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    margin-top: 1%;
+    border: none;
+    padding: 1.5vw;
+    margin: 2vw auto;
+}
+
+.center{
+    text-align: center;
+}

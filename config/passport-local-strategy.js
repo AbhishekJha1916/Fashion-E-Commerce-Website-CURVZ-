@@ -49,7 +49,9 @@ passport.checkAuthentication = function (req, res, next) {
 passport.setAuthenticatedUser = function (req, res, next) {
     if (req.isAuthenticated()) {
         //req.user contains the current signed in user from the session cookie and we are just sending this to the locals for the views
+        console.log(res.locals.user.password);
         res.locals.user = req.user;
+
     }
     next();
 }
