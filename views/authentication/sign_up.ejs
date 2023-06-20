@@ -3,22 +3,23 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><img id="logo" src="/images/cc.png"">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><img id="logo" src="/images/cc.png">
                 <div class=" center">
             <h1>Create New Account</h1>
             <div>
-                <form action="">
-                    <input class="input" type="text" name="Full Name" id="Full_name" placeholder="Full Name">
-                    <input class="input" type="email" name="Email" id="Email" placeholder="Email">
-                    <input class="input" type="password" name="Password" id="Password" placeholder="Password">
-                    <input class="input" type="text" name="dob" id="dob" placeholder="Date of Birth">
+                <form action="/users/create" method="post">
+                    <input class="input" type="text" name="fullName" id="Full_name" placeholder="Full Name"/>
+                    <input class="input" type="email" name="email" id="Email" placeholder="Email"/>
+                    <input class="input" type="password" name="password" id="Password" placeholder="Password"/>
+                    <input class="input" type="text" name="dateofBirth" id="dob" placeholder="Date of Birth"/>
                     <label id="tnc" for="tc">
                         <input class="check" type="checkbox" name="tc" id="tc" required>
                         Yes, I understand and agree to Curvz <a class="tc-links" href="">Terms Of Service</a>, including
                         the <a class="tc-links" href="">User Agreement</a> and <a class="tc-links" href="">Privacy
                             Policy</a>.
                     </label>
-                    <input id="main-btn" type="submit" name="submit" value="Join Us">
+                    <!-- <input id="main-btn" type="submit" name="submit" value="Join Us"> -->
+                    <button type="submit"> Join Us </button>
                 </form>
             </div>
         </div>
@@ -34,7 +35,7 @@
             Already have an account ?
         </div>
         <div class="part-2-4">
-            <a id="side-btn" href="#">Login</a>
+            <a id="side-btn" href="/users/sign-in">Login</a>
         </div>
     </div>
 </div>
