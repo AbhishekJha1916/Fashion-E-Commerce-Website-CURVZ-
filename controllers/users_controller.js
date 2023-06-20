@@ -15,7 +15,7 @@ module.exports.signin = function (req, res) {
 
 module.exports.create = async function(req, res){
     try{
-        const usercheck = await User.findOne({email: req.body.email}); //email is unique in USER
+        const usercheck = await User.findOne({email: req.body.email}); // every user must have a unique email id
         if(!usercheck){
             await User.create(req.body);
             console.log("User created")

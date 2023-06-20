@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6491ddb0a4f741e427a955ab"
+  },
+  "fullName": "Abhishek Kumar Jha",
+  "email": "jhaabhishek227@gmail.com",
+  "password": "12345",
+  "dateofBirth": "16/07/2003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491de41a4f741e427a955ae"
+  },
+  "fullName": "Rajsekhor Saikia",
+  "email": "raj.saikia.rick333@gmail.com",
+  "password": "124",
+  "dateofBirth": "10/04/2001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491deaba4f741e427a955b1"
+  },
+  "fullName": "Rohan Shrivastava",
+  "email": "rohanshrivastava1000@gmail.com",
+  "password": "1234000",
+  "dateofBirth": "27/10/2000",
+  "__v": 0
+}]
