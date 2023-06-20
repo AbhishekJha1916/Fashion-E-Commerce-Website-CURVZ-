@@ -1,4 +1,4 @@
-const db = require("../config/mongoose");
+
 const User = require("../models/users");
 
 module.exports.signup = function (req, res) {
@@ -15,13 +15,18 @@ module.exports.signin = function (req, res) {
 
 module.exports.create = async function(req, res){
     try{
-        console.log(req.body);
-        console.log("Pinging.....");
-        // let user = await User.create(req.body);
-        return res.redirect("back");
+        const usercheck = await User.findOne({email: req.body.email}); //email is unique in USER
+        if(!usercheck){
+            await User.create(req.body);
+            console.log("User created")
+        }
+        else{
+            console.log("User exists");
+            return res.redirect('back');
+        }
+        return res.redirect('/users/sign-in');
     }
-    catch (error){
-        console.log("error in creating user in signing up: ", error);
-        return;
-    }
+    catch(err){
+        console.log(err);
+    }   
 };

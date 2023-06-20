@@ -1,0 +1,56 @@
+/* style for the STYLE VIDEO SECTION */
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+:root {
+  --color-brown: #692E00;
+  --color-white: white;
+  --color-cream: rgb(255, 251, 243); }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+/* style for the entire box */
+.outerbox {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-brown);
+  font-family: "Open Sans", sans-serif;
+  position: relative; }
+
+/* style for the aside section in the box */
+.asidetext {
+  width: 28%;
+  padding-left: 7%;
+  margin-top: 7.5rem;
+  height: auto;
+  display: inline-block;
+  /* heading of the aside section */
+  /* paragraph in the aside section */
+  /* button in the aside section */ }
+  .asidetext h1 {
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0px; }
+  .asidetext p {
+    color: var(--color-cream);
+    font-weight: 300;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem; }
+  .asidetext button {
+    background-color: transparent;
+    border: 1px solid var(--color-cream);
+    color: var(--color-cream);
+    padding: 1rem 4rem;
+    font-weight: bolder; }
+
+/* video section */
+.video {
+  display: inline-block;
+  background-color: var(--color-cream);
+  width: 56%;
+  height: 75vh;
+  margin: 4rem 0rem 6rem 0rem;
+  vertical-align: top; }
