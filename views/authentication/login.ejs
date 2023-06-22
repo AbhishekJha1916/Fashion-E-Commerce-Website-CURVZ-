@@ -22,9 +22,9 @@
             <p id="or">OR</p>
         </div>
         <div class="details">
-            <form action="">
-                <input type="text" name="Email" id="Email" placeholder="&nbsp;&nbsp;Email">
-                <input type="text" name="Password" id="Password" placeholder="&nbsp;&nbsp;Password">
+            <form action="/users/create-session" method="post">
+                <input type="email" name="email" id="Email" placeholder="&nbsp;&nbsp;Email" required>
+                <input type="password" name="password" id="Password" placeholder="&nbsp;&nbsp;Password" required>
                 <button id="btn1" type="submit">Sign In</button>
             </form>
         </div>

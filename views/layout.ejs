@@ -11,23 +11,24 @@
 
   <!-- Style content that we want to implement -->
   <%- style %>
-  <title>Curvz</title>
+    <title>Curvz</title>
 </head>
 
 <body>
-    <% if(!(title === "Sign up" || title === "Sign in") ) {%>
+  <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
+    <% var log=locals.user %>
+    <% if(locals.user){ %>
+      <%- include('./components/_header_al');%>
+    <% } else {%>
       <%- include('./components/_header_bl');%>
-      <%}%>
-    
-    <!-- Variable content that we want to show -->
-    <%- body %>
-    <% if(!(title === "Sign up" || title === "Sign in") ) {%>
-      <%- include('./components/_footer');%>
-      <%}%>
-    
-    
-    <!-- Script content that we want to execute -->
-    
+    <%}%>
+  <%}%>
+
+  <!-- Variable content that we want to show -->
+  <%- body %>
+  <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
+    <%- include('./components/_footer');%>
+  <%}%>
 </body>
 
 </html>

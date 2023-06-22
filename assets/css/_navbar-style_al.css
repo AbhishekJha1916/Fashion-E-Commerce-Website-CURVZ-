@@ -1,0 +1,163 @@
+@import "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Staatliches&display=swap";
+* {
+  margin: 0px;
+  padding: 0; }
+
+/* Forms the base of navbar */
+.header-part-1 {
+  min-height: 15vh;
+  width: 100%; }
+
+/* Base of the navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  content: none;
+  position: fixed;
+  z-index: 100;
+  background-color: #5A1413; }
+
+/* Deals with the logo  */
+.navbar-part-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* Set logo to correct size */
+.navbar-icon-image {
+  height: 25px;
+  width: auto; }
+
+/* Deals with the links in the middle part of the navbar */
+.navbar-part-2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex; }
+
+.navbar-links {
+  text-decoration: none;
+  font-family: "Syne", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #C6B79B;
+  position: relative;
+  display: block;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  transition: .5s;
+  z-index: 1;
+  /* Link animation section */ }
+  .navbar-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #C6B79B;
+    border-bottom: 2px solid #C6B79B;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .2s; }
+  .navbar-links::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+    z-index: -1; }
+  .navbar-links:hover {
+    color: white; }
+    .navbar-links:hover::before {
+      transform: scaleY(1);
+      opacity: 1; }
+    .navbar-links:hover::after {
+      transform: scaleY(1);
+      opacity: 1; }
+
+/* Deals with the login part of the navbar */
+.navbar-login {
+  text-decoration: none;
+  color: #692e00;
+  border: 1.5px solid #692e00;
+  font-family: "Syne", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+  margin-right: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* Effects when user hovers over login */ }
+  .navbar-login:hover {
+    color: #ffd4a8;
+    transition-delay: .1s;
+    background-color: #692e00; }
+
+.navbar-3 {
+  margin: 0px 20px;
+  margin-right: 45px;
+  height: 28px;
+  color: #C6B79B;
+  cursor: pointer; }
+
+.navbar-3-shop {
+  margin: 0px 20px;
+  margin-right: auto;
+  height: 25px;
+  color: #C6B79B;
+  cursor: pointer; }
+
+.navbar-part-3 {
+  display: flex;
+  margin-right: 45px; }
+
+.boxContainer {
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 21px;
+  border: 2px solid #692e00;
+  padding: 0px 10px;
+  border-radius: 50px; }
+
+.elementContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle; }
+
+.search {
+  border: none;
+  height: 21px;
+  width: 150px;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500; }
+
+.search-icon {
+  width: auto;
+  height: 25px;
+  color: #C6B79B;
+  cursor: pointer; }
