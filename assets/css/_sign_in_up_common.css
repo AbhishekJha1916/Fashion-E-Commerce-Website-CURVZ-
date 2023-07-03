@@ -82,7 +82,8 @@ a {
   margin-top: 1%;
   border: none;
   padding: 1.5vw;
-  margin: 2vw auto; }
+  margin: 2vw auto;
+  outline: none; }
 
 .center {
   text-align: center; }
