@@ -17,7 +17,7 @@
   content: none;
   position: fixed;
   z-index: 100;
-  background-color: #5A1413; }
+  background-color: #5a1413; }
 
 /* Deals with the logo  */
 .navbar-part-1 {
@@ -53,28 +53,28 @@
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #C6B79B;
+  color: #c6b79b;
   position: relative;
   display: block;
   margin: 20px 20px;
   padding: 10px 20px;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 1;
   /* Link animation section */ }
   .navbar-links::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-top: 2px solid #C6B79B;
-    border-bottom: 2px solid #C6B79B;
+    border-top: 2px solid #c6b79b;
+    border-bottom: 2px solid #c6b79b;
     transform: scaleY(2);
     opacity: 0;
-    transition: .2s; }
+    transition: 0.2s; }
   .navbar-links::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 2px;
     left: 0;
@@ -82,7 +82,7 @@
     background-color: #ffffff;
     transform: scale(0);
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
     z-index: -1; }
   .navbar-links:hover {
     color: white; }
@@ -112,21 +112,21 @@
   /* Effects when user hovers over login */ }
   .navbar-login:hover {
     color: #ffd4a8;
-    transition-delay: .1s;
+    transition-delay: 0.1s;
     background-color: #692e00; }
 
 .navbar-3 {
   margin: 0px 20px;
   margin-right: 45px;
   height: 28px;
-  color: #C6B79B;
+  color: #c6b79b;
   cursor: pointer; }
 
 .navbar-3-shop {
   margin: 0px 20px;
   margin-right: auto;
   height: 25px;
-  color: #C6B79B;
+  color: #c6b79b;
   cursor: pointer; }
 
 .navbar-part-3 {
@@ -159,5 +159,34 @@
 .search-icon {
   width: auto;
   height: 25px;
-  color: #C6B79B;
+  color: #c6b79b;
   cursor: pointer; }
+
+.navbar-part-3 {
+  display: flex;
+  align-items: center; }
+
+#toggle {
+  position: relative; }
+
+#toggle ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 0;
+  display: none; }
+
+#toggle ul li {
+  list-style: none;
+  padding: 8px 16px; }
+
+#toggle ul li a {
+  color: #333;
+  text-decoration: none; }
+
+#toggle:hover ul {
+  display: block; }
