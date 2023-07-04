@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #5A1413;
+    --gray: #ededed;
+    --sidebar-color:#b08f8e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.filter{
+    font-size: larger;
+    font-weight: bold;
+    padding: 1vh 1vw;
+    transition: 0.2s ease-out;
+}
+
+.filter:hover{
+    border-bottom: 2px solid #5A1413;
+}
+
+.desc-content{
+    margin-top: 3vh;
+    color: #808080;
+    font-size: large;
+}
+
+.box-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.box{
+    border: 1px solid black;
+    width: 25vw;
+    height: 50vh;
+}
+
+.star {
+    position: relative;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid #5A1413;
+    border-left:   .3em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 24px;
+    
+    &:before, &:after {
+      content: '';
+      
+      display: block;
+      width: 0;
+      height: 0;
+      
+      position: absolute;
+      top: .6em;
+      left: -1em;
+    
+      border-right:  1em solid transparent;
+      border-bottom: .7em  solid #5A1413;
+      border-left:   1em solid transparent;
+    
+      transform: rotate(-35deg);
+    }
+    
+    &:after {  
+      transform: rotate(35deg);
+    }
+  }
+
+.bttn-cart{
+    width: 3vh;
+    height: 3vh;
+    margin-right: 2vw;
+}
+
+.cart-no{
+    margin-right: 2vw;
+}
+
+.option-account{
+    display: flex;
+    margin-right: 2vw;
+}
+
+.bttn{
+    width: 3vh;
+    height: 3vh;
+    margin-right: 0.3vw;
+}
+
+#header{
+    background-image: url("../images/sweters.jpg");
+    width: 100vw;
+    text-align: center;
+    padding: 10vh 0;
+
+    font-size: xx-large;
+}
+
+.option-cart{
+    color: white;
+    background-color: #5A1413;
+    padding: 1vh 1vw;
+    font-size: large;
+    margin: 0 1vw;
+}
+
+#filters{
+    display: flex;
+}
+
+#detail-list{
+    margin: 5vh 0 0 5vw;
+}
+
+#description{
+    margin: 2vh 0 0 1vw;
+    width: 85vw;
+}
+
+#related-products{
+    text-align: center;
+    margin: 5vh 0 5vh 6vw;
+    width: 85vw;
+}
+
+#product{
+    margin: 5vh 0 0 6vw;
+    display: flex;
+}
+
+#prod-img{
+    display: inline;
+}
+
+#image{
+    width: 28vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#prod-details{
+    display: inline;
+}
+
+#detail-heading{
+    margin: 5vh 0 0 5vw;
+}
+
+#price{
+    margin: 1vh 0 0 5vw;
+}
+
+#actual-price{
+    font-size: xx-large;
+    color: darkgoldenrod;
+}
+
+#orignal-price{
+    font-size: x-large;
+    margin-left: 0.5vw;
+    font-weight: lighter;
+    color: #808080;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+#star-rating{
+    margin: 1vh 0 0 5vw;
+}
+
+#review-no{
+    display: inline;
+    font-size: large;
+}
+
+#star-no{
+    display: inline;
+}
+
+#note{
+    margin: 1vh 0 0 5vw;
+    width: 50vw;
+}
+
+#prod-options{
+    margin: 1vh 0 0 5vw;
+    display: flex;
+}
+
+#option1{
+    display: flex;
+    margin-left: 20vw;
+}
+
+#account-actions{
+    margin: 1vh 0 0 5vw;
+    display: flex;
+}
+
