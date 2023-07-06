@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --white-light: rgba(255, 255, 255, 0.5);
-    --alice-blue: #f8f9fa;
-    --carribean-green: #5A1413;
-    --gray: #ededed;
-    --sidebar-color:#b08f8e;
+    --primary-color: #ffffff;
+    --main-theme: #5A1413;
+    --text-gray: #808080;
+    --golden-highlight: #b8860b;
+    --border: #000000;
 }
 *{
     padding: 0;
@@ -19,30 +19,30 @@ body{
 .filter{
     font-size: larger;
     font-weight: bold;
-    padding: 1vh 1vw;
+    padding: 1dvh 1dvw;
     transition: 0.2s ease-out;
 }
 
 .filter:hover{
-    border-bottom: 2px solid #5A1413;
+    border-bottom: 2px solid var(--main-theme);
 }
 
 .desc-content{
     margin-top: 3vh;
-    color: #808080;
+    color: var(--text-gray);
     font-size: large;
 }
 
 .box-list{
     display: flex;
     justify-content: space-between;
-    margin-top: 5vh;
+    margin-top: 5dvh;
 }
 
 .box{
-    border: 1px solid black;
-    width: 25vw;
-    height: 50vh;
+    border: 1px solid var(--border);
+    width: 25dvw;
+    height: 50dvh;
 }
 
 .star {
@@ -57,7 +57,7 @@ body{
     margin-bottom: 1.2em;
     
     border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #5A1413;
+    border-bottom: .7em  solid var(--main-theme);
     border-left:   .3em solid transparent;
   
     /* Controlls the size of the stars. */
@@ -75,7 +75,7 @@ body{
       left: -1em;
     
       border-right:  1em solid transparent;
-      border-bottom: .7em  solid #5A1413;
+      border-bottom: .7em  solid var(--main-theme);
       border-left:   1em solid transparent;
     
       transform: rotate(-35deg);
@@ -87,29 +87,37 @@ body{
   }
 
 .bttn-cart{
-    width: 3vh;
-    height: 3vh;
-    margin-right: 2vw;
+    width: 3dvh;
+    height: 3dvh;
+    margin-right: 2dvw;
 }
 
 .cart-no{
-    margin-right: 2vw;
+    margin-right: 2dvw;
 }
 
 .option-account{
     display: flex;
-    margin-right: 2vw;
+    margin-right: 2dvw;
 }
 
 .bttn{
-    width: 3vh;
-    height: 3vh;
-    margin-right: 0.3vw;
+    width: 3dvh;
+    height: 3dvh;
+    margin-right: 0.3dvw;
+}
+
+.image-blur{
+    width: 10dvw;
+    height: 30dvh;
+    border-radius: 50px;
+    margin-right: 2dvw;
+    opacity: 0.5;
 }
 
 #header{
     background-image: url("../images/sweters.jpg");
-    width: 100vw;
+    width: 100dvw;
     text-align: center;
     padding: 10vh 0;
 
@@ -117,11 +125,11 @@ body{
 }
 
 .option-cart{
-    color: white;
-    background-color: #5A1413;
-    padding: 1vh 1vw;
+    color: var(--primary-color);
+    background-color: var(--main-theme);
+    padding: 1dvh 1dvw;
     font-size: large;
-    margin: 0 1vw;
+    margin: 0 1dvw;
 }
 
 #filters{
@@ -129,22 +137,22 @@ body{
 }
 
 #detail-list{
-    margin: 5vh 0 0 5vw;
+    margin: 5dvh 0 0 5dvw;
 }
 
 #description{
-    margin: 2vh 0 0 1vw;
-    width: 85vw;
+    margin: 2dvh 0 0 1dvw;
+    width: 85dvw;
 }
 
 #related-products{
     text-align: center;
-    margin: 5vh 0 5vh 6vw;
-    width: 85vw;
+    margin: 5dvh 0 5dvh 6dvw;
+    width: 85dvw;
 }
 
 #product{
-    margin: 5vh 0 0 6vw;
+    margin: 5dvh 0 0 6dvw;
     display: flex;
 }
 
@@ -153,9 +161,9 @@ body{
 }
 
 #image{
-    width: 28vw;
-    height: 70vh;
-    border-radius: 20px;
+    width: 28dvw;
+    height: 70dvh;
+    border-radius: 50px;
 }
 
 #prod-details{
@@ -163,29 +171,29 @@ body{
 }
 
 #detail-heading{
-    margin: 5vh 0 0 5vw;
+    margin: 5dvh 0 0 5dvw;
 }
 
 #price{
-    margin: 1vh 0 0 5vw;
+    margin: 1dvh 0 0 5dvw;
 }
 
 #actual-price{
     font-size: xx-large;
-    color: darkgoldenrod;
+    color: var(--golden-highlight);
 }
 
 #orignal-price{
     font-size: x-large;
-    margin-left: 0.5vw;
+    margin-left: 0.5dvw;
     font-weight: lighter;
-    color: #808080;
+    color: var(--text-gray);
     font-style: italic;
     text-decoration: line-through;
 }
 
 #star-rating{
-    margin: 1vh 0 0 5vw;
+    margin: 1dvh 0 0 5dvw;
 }
 
 #review-no{
@@ -198,22 +206,31 @@ body{
 }
 
 #note{
-    margin: 1vh 0 0 5vw;
-    width: 50vw;
+    margin: 1dvh 0 0 5dvw;
+    width: 50dvw;
 }
 
 #prod-options{
-    margin: 1vh 0 0 5vw;
+    margin: 1dvh 0 0 5dvw;
     display: flex;
 }
 
 #option1{
     display: flex;
-    margin-left: 20vw;
+    margin-left: 20dvw;
 }
 
 #account-actions{
-    margin: 1vh 0 0 5vw;
+    margin: 1dvh 0 0 5dvw;
     display: flex;
 }
 
+#product-views{
+    margin: 5dvh 0 0 6dvw;
+}
+
+#bttn-view{
+    width: 3dvh;
+    height: 3dvh;
+    margin: 0 0 13dvh 2dvw;
+}
