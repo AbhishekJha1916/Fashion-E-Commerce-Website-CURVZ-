@@ -11,6 +11,8 @@
 
   <!-- Style content that we want to implement -->
   <%- style %>
+
+  
     <title>Curvz</title>
 </head>
 
@@ -24,11 +26,20 @@
     <%}%>
   <%}%>
 
+  
   <!-- Variable content that we want to show -->
   <%- body %>
+
+
   <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
     <%- include('./components/_footer');%>
   <%}%>
+
+
+  <!-- scripts imported -->
+  <%- script %>
+
+
 </body>
 
 </html>
