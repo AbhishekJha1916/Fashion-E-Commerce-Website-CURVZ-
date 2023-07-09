@@ -12,12 +12,13 @@ const mongoose = require("mongoose");
 
 // module.exports = db;
 
-const uri = "mongodb+srv://akjha418:hVOIwwpO1Z0fqq3g@curvzcluster.3t1enqi.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://os03bit:LBnK4K6lVihz5VYa@curvzdata.a3aeoct.mongodb.net/?retryWrites=true&w=majority";
 mongoose.set('strictQuery', false);
 
 const start = async() => {
     try{
         await mongoose.connect(uri);
+        console.log("Connect DB");
 
     }
     catch(err){
