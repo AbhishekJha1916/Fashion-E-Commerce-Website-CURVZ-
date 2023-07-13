@@ -11,19 +11,34 @@
   margin: 0;
   box-sizing: border-box; }
 
+button {
+  all: unset; }
+
 body {
   font-family: 'Quicksand', sans-serif; }
 
 .filter {
   font-size: larger;
   font-weight: bold;
-  padding: 1dvh 1dvw;
-  transition: 0.2s ease-out; }
+  padding: 1dvh 1dvw; }
 
-.filter:hover {
-  border-bottom: 2px solid var(--main-theme); }
+.selected {
+  border-bottom: 1px solid var(--main-theme); }
+
+.hide {
+  display: none; }
 
 .desc-content {
+  margin-top: 3vh;
+  color: var(--text-gray);
+  font-size: large; }
+
+.spec-content {
+  margin-top: 3vh;
+  color: var(--text-gray);
+  font-size: large; }
+
+.review-content {
   margin-top: 3vh;
   color: var(--text-gray);
   font-size: large; }
@@ -111,6 +126,14 @@ body {
   margin: 5dvh 0 0 5dvw; }
 
 #description {
+  margin: 2dvh 0 0 1dvw;
+  width: 85dvw; }
+
+#specification {
+  margin: 2dvh 0 0 1dvw;
+  width: 85dvw; }
+
+#review {
   margin: 2dvh 0 0 1dvw;
   width: 85dvw; }
 
