@@ -9,9 +9,10 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    //Image path
     path:{
         type: String,
-        required: true,
+        // required: true,
     },
     price:{
         type: String,
@@ -19,15 +20,15 @@ const productSchema = new mongoose.Schema({
     },
     //discount is in percentage
     discount:{
-        type: String,
+        type: Number,
         required: true,
     },
-    //uncomment when the product detail schema is ready
-    // detailid: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "productdetail",
-    //     required: true,
-    // }
+    // uncomment when the product detail schema is ready
+    detailid: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "ProductDetail",
+        required: true,
+    }
 
 });
 

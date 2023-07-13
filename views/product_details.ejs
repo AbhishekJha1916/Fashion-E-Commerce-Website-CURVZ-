@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/css/product-details.css">
+<link rel="stylesheet" href="/css/product-details.css">
 <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 <title>Product Detailst</title>
 
@@ -6,16 +6,17 @@
 <div id="header">
     <h1 id="heading">Product Details</h1>
 </div>
-
+<%console.log(productdata)%>
 <div id="product">
     <div id="prod-img">
-        <img src="../assets/images/sweters.jpg" alt="" id="image">
+        <img src="/images/sweters.jpg" alt="" id="image">
     </div>
     <div id="prod-details">
-        <h1 id="detail-heading">Shadi Ka Kurta</h1>
+        <h1 id="detail-heading"><%=productdata.productName%></h1>
         <div id="price">
-            <span id="actual-price">$100</span>
-            <span id="orignal-price">$99</span>
+            <%let u=productdata.price-(productdata.price * productdata.discount)/100%>
+            <span id="actual-price">$<%=u%></span>
+            <span id="orignal-price">$<%=productdata.price%></span>
         </div>
         <div id="star-rating">
             <p id="star-no">
@@ -31,9 +32,9 @@
             <p class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis labore animi ea provident dolores rerum, magni perspiciatis deleniti error consectetur quibusdam illum, atque perferendis! Minima ut repellat ex sed necessitatibus dolorem, vitae saepe velit expedita praesentium ipsam debitis corporis nam cum. Consequuntur, excepturi reiciendis. Doloribus sint reiciendis dolor suscipit voluptatum dicta, saepe repellat accusantium modi! Quia tempora debitis perspiciatis commodi!</p>
         </div>
         <div id="prod-options">
-            <img src="../assets/images/shopping.png" alt="" class="bttn-cart">
+            <img src="/images/shopping.png" alt="" class="bttn-cart">
             <span class="cart-no">4</span>
-            <img src="../assets/images/shopping.png" alt="" class="bttn-cart">
+            <img src="/images/shopping.png" alt="" class="bttn-cart">
             <div id="option1">
                 <div class="option-cart">Add to Cart</div>
                 <div class="option-cart">Buy Now</div>
@@ -41,11 +42,11 @@
         </div>
         <div id="account-actions">
                 <div class="option-account">
-                    <img src="../assets/images/shopping.png" alt="" class="bttn">
+                    <img src="/images/shopping.png" alt="" class="bttn">
                     <p class="account-option-desc">Add to Wishlist</p>
                 </div>
                 <div class="option-account">
-                    <img src="../assets/images/shopping.png" alt="" class="bttn">
+                    <img src="/images/shopping.png" alt="" class="bttn">
                     <p class="account-option-desc">Compare</p>
                 </div>
         </div>
@@ -53,9 +54,9 @@
 </div>
 
 <div id="product-views">
-    <img src="../assets/images/sweters.jpg" alt="" class="image-blur">
-    <img src="../assets/images/sweters.jpg" alt="" class="image-blur">
-    <img src="../assets/images/shopping.png" alt="" id="bttn-view">
+    <img src="/images/sweters.jpg" alt="" class="image-blur">
+    <img src="/images/sweters.jpg" alt="" class="image-blur">
+    <img src="/images/shopping.png" alt="" id="bttn-view">
 </div>
 
 <div id="detail-list">
