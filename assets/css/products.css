@@ -305,3 +305,6 @@ body {
   .product-col-r-bottom .sm-title {
     padding: 0; }
   /* Section to rectify ends */ }
+
+a {
+  text-decoration: none !important; }

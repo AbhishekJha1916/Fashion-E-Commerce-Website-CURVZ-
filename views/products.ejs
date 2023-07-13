@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="/css/products.css">
 
 <!-- font awesome -->
@@ -7,7 +6,9 @@
 
 <div class="products">
     <section id="sidebar">
-        <div class="sidebar-headers"><p>Browse By</p></div>
+        <div class="sidebar-headers">
+            <p>Browse By</p>
+        </div>
         <div id="sidebar-clothes">
             <a href="#" class="sidebar-links">Shirt</a>
             <a href="#" class="sidebar-links">Shoes</a>
@@ -16,10 +17,18 @@
             <a href="#" class="sidebar-links">Outwears</a>
             <a href="#" class="sidebar-links">Fancywear</a>
         </div>
-        <div class="sidebar-headers"><p>Filter</p><a href="#" class="sidebar-links">+</a> </div>
-        <div class="sidebar-headers"><p>Price</p><a href="#" class="sidebar-links">+</a> </div>
-        <div class="sidebar-headers"><p>Color</p><a href="#" class="sidebar-links">+</a> </div>
-        <div class="sidebar-headers"><p>Brand</p><a href="#" class="sidebar-links">+</a> </div>
+        <div class="sidebar-headers">
+            <p>Filter</p><a href="#" class="sidebar-links">+</a>
+        </div>
+        <div class="sidebar-headers">
+            <p>Price</p><a href="#" class="sidebar-links">+</a>
+        </div>
+        <div class="sidebar-headers">
+            <p>Color</p><a href="#" class="sidebar-links">+</a>
+        </div>
+        <div class="sidebar-headers">
+            <p>Brand</p><a href="#" class="sidebar-links">+</a>
+        </div>
         <div id="sidebar-reset"><a href="#" class="sidebar-links">Reset All Filters</a></div>
     </section>
     <div class="container">
@@ -30,281 +39,59 @@
 
         <div class="product-items">
             <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-1.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
+            
+                <%for(let i=0; i<productdata.length; i++){%>
+                    <div class="product">
+                        <a href="/shop/productdetail/<%=productdata[i]._id%>">
+                            <div class="product-content">
+                                <div class="product-img">
+                                    <img src="/images/shoe-1.png" alt="product image">
+                                </div>
+                                <div class="product-btns">
+                                    <button type="button" class="btn-cart"> add to cart
+                                        <span><i class="fas fa-plus"></i></span>
+                                    </button>
+                                    <button type="button" class="btn-buy"> buy now
+                                        <span><i class="fas fa-shopping-cart"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
 
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="sm-title">
+                                    <%=productdata[i].category%>
+                                </h2>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href="/shop/productdetail/<%=productdata[i]._id%>" class="product-name">
+                                <%=productdata[i].productName%>
+                            </a>
+                            <p class="product-price">$<%=productdata[i].price%>
+                            </p>
+                            <%let u=productdata[i].price - (productdata[i].price * productdata[i].discount)/100%>
+                                <p class="product-price">$<%=u%>
+                                </p>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="sm-title">
+                                <%=productdata[i].discount%>% off
+                            </h2>
                         </div>
                     </div>
-                    <a href="#" class="product-name">mens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
+                    <%}%>
+                        <!-- end of single product -->
+                        <!-- single product -->
 
-                <div class="off-info">
-                    <h2 class="sm-title">25% off</h2>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-2.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">mens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-3.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">mens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-4.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">mens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-
-                <div class="off-info">
-                    <h2 class="sm-title">25% off</h2>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-5.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">womens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-6.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">womens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-7.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">womens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-img">
-                        <img src="/images/shoe-8.png" alt="product image">
-                    </div>
-                    <div class="product-btns">
-                        <button type="button" class="btn-cart"> add to cart
-                            <span><i class="fas fa-plus"></i></span>
-                        </button>
-                        <button type="button" class="btn-buy"> buy now
-                            <span><i class="fas fa-shopping-cart"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <div class="product-info-top">
-                        <h2 class="sm-title">lifestyle</h2>
-                        <div class="rating">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                    </div>
-                    <a href="#" class="product-name">womens shoes DN 23XX, new product</a>
-                    <p class="product-price">$ 150.00</p>
-                    <p class="product-price">$ 133.00</p>
-                </div>
-
-                <div class="off-info">
-                    <h2 class="sm-title">35% off</h2>
-                </div>
-            </div>
-            <!-- end of single product -->
+                        <!-- end of single product -->
         </div>
     </div>
 </div>
