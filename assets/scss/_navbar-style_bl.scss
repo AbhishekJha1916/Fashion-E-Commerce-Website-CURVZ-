@@ -1,7 +1,7 @@
-$color_1: #C6B79B;
+$color_1: #c6b79b;
 $color_2: rgb(255, 255, 255);
-$font-family_1: 'Syne', sans-serif;
-$background-color_1: #5A1413;
+$font-family_1: "Syne", sans-serif;
+$background-color_1: #5a1413;
 $background-color_2: #ffffff;
 $border-color_1: #ffffff;
 
@@ -9,177 +9,199 @@ $border-color_1: #ffffff;
 @import "https://fonts.googleapis.com/css2?family=Staatliches&display=swap";
 
 * {
-	margin: 0px;
-	padding: 0;
+  margin: 0px;
+  padding: 0;
 }
 
 /* Forms the base of navbar */
 .header-part-1 {
-	min-height: 15vh;
-	width: 100%;
+  min-height: 15vh;
+  width: 100%;
 }
 
 /* Base of the navbar */
 .navbar {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	content: none;
-	text-align: center;
-	align-items: center;
-	position: fixed;
-	z-index: 100;
-	background-color: $background-color_1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  content: none;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background-color: $background-color_1;
 }
 
 /* Deals with the logo  */
 .navbar-part-1 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 45px;
-	margin-right: 45px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Set logo to correct size */
 .navbar-icon-image {
-	height: 25px;
-	width: auto;
+  height: 25px;
+  width: auto;
 }
 
 /* Deals with the links in the middle part of the navbar */
 .navbar-part-2 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
 }
 .navbar-links {
-	text-decoration: none;
-	font-family: $font-family_1;
-	font-size: 12px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: $color_1;
-	position: relative;
-	display: block;
-	margin: 20px 20px;
-	padding: 10px 20px;
-	transition: .5s;
-	z-index: 1;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border-top: 2px solid #C6B79B;
-		border-bottom: 2px solid #C6B79B;
-		transform: scaleY(2);
-		opacity: 0;
-		transition: .4s;
-	}
+  text-decoration: none;
+  font-family: $font-family_1;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color_1;
+  position: relative;
+  display: block;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #c6b79b;
+    border-bottom: 2px solid #c6b79b;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.4s;
+  }
 
-	/* Link animation section */
-	&::after {
-		content: '';
-		position: absolute;
-		top: 2px;
-		left: 0;
-		height: 100%;
-		background-color: $background-color_2;
-		transform: scale(0);
-		opacity: 0;
-		transition: .3s;
-		z-index: -1;
-	}
-	&:hover {
-		color: $color_2;
-		text-decoration: none;
-		&::before {
-			transform: scaleY(1);
-			opacity: 1;
-		}
-		&::after {
-			transform: scaleY(1);
-			opacity: 1;
-		}
-	}
+  /* Link animation section */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 100%;
+    background-color: $background-color_2;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: $color_2;
+    text-decoration: none;
+    &::before {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    &::after {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
 }
 
 /* Deals with the login part of the navbar */
 .navbar-login {
-	text-decoration: none;
-	color: $color_1;
-	border: 1.5px solid #C6B79B;
-	font-family: $font-family_1;
-	font-size: 12px;
-	font-weight: 600;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 30px;
-	margin-right: 45px;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  text-decoration: none;
+  color: $color_1;
+  border: 1.5px solid #c6b79b;
+  font-family: $font-family_1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-	/* Effects when user hovers over login */
-	&:hover {
-		color: $color_2;
-		transition-delay: .1s;
-		border-color: $border-color_1;
-		text-decoration: none;
-	}
+  /* Effects when user hovers over login */
+  &:hover {
+    color: $color_2;
+    transition-delay: 0.1s;
+    border-color: $border-color_1;
+    text-decoration: none;
+  }
 }
 .search {
-	border: none;
-	height: 21px;
-	width: 150px;
-	padding: 0px 5px;
-	border-radius: 50px;
-	font-size: 20px;
-	font-weight: 500;
+  border: none;
+  height: 21px;
+  width: 150px;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .search-icon {
-	width: auto;
-	height: 25px;
-	color: $color_1;
-	margin-top: 18px;
-	cursor: pointer;
+  width: auto;
+  height: 25px;
+  color: $color_1;
+  // margin-top: 18px;
+  cursor: pointer;
 }
 .navbar-part-3 {
-	display: flex;
-	margin-right: 45px;
+  display: flex;
+  margin-right: 45px;
 }
 .boxContainer {
-	margin: auto;
-	position: relative;
-	width: 150px;
-	height: 21px;
-	border: 2px solid #692e00;
-	padding: 0px 10px;
-	border-radius: 50px;
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 21px;
+  border: 2px solid #692e00;
+  padding: 0px 10px;
+  border-radius: 50px;
 }
 .elementContainer {
-	width: 100%;
-	height: 100%;
-	vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
 }
 .navbar-3 {
-	margin: 0px 20px;
-	margin-right: auto;
-	height: 25px;
-	color: $color_1;
-	margin-top: 18px;
-	cursor: pointer;
+  margin: 0px 20px;
+  margin-right: auto;
+  height: 25px;
+  color: $color_1;
+  // margin-top: 18px;
+  cursor: pointer;
+}
+#search-bar-div {
+  display: none;
+  width: 200px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0);
+}
+#search-bar-div button {
+  background-color: #ffffff00;
+  outline: none;
+  border: 0px;
+}
+.navbar-part-3 {
+  align-items: center;
+}
+.elementContainer button {
+  background-color: #ffffff00;
+  outline: none;
+  border: 0px;
+}
+.search-bar-input {
+  width: 180px !important;
 }
