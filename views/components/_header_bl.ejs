@@ -23,9 +23,14 @@
       </div>
 
       <div class="navbar-part-3">
-        <div class="elementContainer">
-          <img src="/images/search.png" class="search-icon" alt="">
-          <!-- <input type="text" class="search"> -->
+        <div id="search-bar-div">
+          <input type="text" class="search-bar-input">
+          <button onclick="closesearch()"><img src="/images/search.png" id="search-icon" class="search-icon" alt=""></button>
+        </div>
+        <div class="elementContainer" id="search-div">
+          
+          <button onclick="clicksearch()"><img src="/images/search.png" id="search-icon" class="search-icon" alt=""></button>
+          <!-- <input type="text" class="s"> -->
         </div>
         <div>
           <img src="/images/shopping.png" class="navbar-3" alt="">
@@ -34,3 +39,4 @@
       </div>
     </nav>
 </header>
+<script src="/js/login.js"></script>
