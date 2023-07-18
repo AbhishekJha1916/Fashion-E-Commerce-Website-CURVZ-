@@ -33,3 +33,29 @@ module.exports.productdetail = async function(req, res){
         title: "Product Detail", productdata
     });
 };
+
+module.exports.addProducts = async (req, res) => {
+    let productName = req.body.productName;
+    let existingProductUpdate = await Product.findOneAndUpdate(
+      { productName: productName },
+      req.body
+    );
+    if (existingProductUpdate) {
+      console.log("Updated");
+    } else {
+      try {
+        await Product.create(req.body);
+      } catch (err) {
+        console.log("Error in creating product: ", err);
+        return res.json({ Error: err });
+      }
+    }
+    return res.redirect("back");
+  };
+  
+  module.exports.addProductsPage = async (req, res) => {
+    return res.render("temp/addProduct", {
+      title: "Product Add",
+    });
+  };
+  

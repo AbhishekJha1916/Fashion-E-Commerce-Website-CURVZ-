@@ -14,9 +14,9 @@
     <div id="prod-details">
         <h1 id="detail-heading"><%=productdata.productName%></h1>
         <div id="price">
-            <%let u=productdata.price-(productdata.price * productdata.discount)/100%>
-            <span id="actual-price">$<%=u%></span>
-            <span id="orignal-price">$<%=productdata.price%></span>
+            
+            <span id="actual-price">$<%=productdata.price%></span>
+            <span id="orignal-price">$<%=productdata.MRP%></span>
         </div>
         <div id="star-rating">
             <p id="star-no">
