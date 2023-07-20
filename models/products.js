@@ -14,15 +14,22 @@ const productSchema = new mongoose.Schema({
         type: String,
         // required: true,
     },
-    price:{
-        type: String,
-        required: true,
+    MRP:{
+        type:Number,
+        required:true
     },
-    //discount is in percentage
-    discount:{
+    price:{
         type: Number,
         required: true,
     },
+    tags:{
+        type:String
+    },
+    //discount is in percentage
+    // discount:{
+    //     type: Number,
+    //     required: true,
+    // },
     // uncomment when the product detail schema is ready
     detailid: {
         type: mongoose.Schema.Types.ObjectId,

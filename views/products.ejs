@@ -74,16 +74,17 @@
                             <a href="/shop/productdetail/<%=productdata[i]._id%>" class="product-name">
                                 <%=productdata[i].productName%>
                             </a>
-                            <p class="product-price">$<%=productdata[i].price%>
+                            <p class="product-price">$<%=productdata[i].MRP%>
                             </p>
-                            <%let u=productdata[i].price - (productdata[i].price * productdata[i].discount)/100%>
-                                <p class="product-price">$<%=u%>
+                            
+                                <p class="product-price">$<%=productdata[i].price%>
                                 </p>
                         </div>
 
                         <div class="off-info">
                             <h2 class="sm-title">
-                                <%=productdata[i].discount%>% off
+                                <% let discount=Math.round((productdata[i].MRP-productdata[i].price)/productdata[i].MRP*100) %>
+                                <%=discount%>% off
                             </h2>
                         </div>
                     </div>
