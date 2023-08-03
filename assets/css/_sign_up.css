@@ -1,3 +1,7 @@
+@import "https://fonts.googleapis.com/css2?family=Staatliches&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
+
 #part-2-3{
     color: white;
     font-size: 17.5px;
@@ -39,3 +43,11 @@ input[type="checkbox"] {
     color: rgb(105, 138, 255);
 }
 
+.row .logo-head{
+    display: inline-block;
+    width: 50%;
+    padding: 1.25rem 2.5rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: "Syne", sans-serif;
+}

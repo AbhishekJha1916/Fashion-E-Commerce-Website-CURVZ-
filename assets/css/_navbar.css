@@ -180,3 +180,25 @@
 
 .search-bar-input {
   width: 180px !important; }
+
+#toggle {
+  position: relative;
+  padding-right: 50px; }
+  #toggle ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 0;
+    display: none; }
+    #toggle ul li {
+      list-style: none;
+      padding: 8px 16px; }
+      #toggle ul li a {
+        color: #333;
+        text-decoration: none; }
+  #toggle:hover ul {
+    display: block; }

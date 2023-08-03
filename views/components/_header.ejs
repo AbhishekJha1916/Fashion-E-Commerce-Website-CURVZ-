@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/_navbar-style_bl.css" />
+<link rel="stylesheet" href="/css/_navbar.css" />
 <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
   rel="stylesheet"
@@ -58,7 +58,23 @@
       <div>
         <img src="/images/shopping.png" class="navbar-3" alt="" />
       </div>
-      <a class="navbar-login" href="/users/sign-in" target="_self"> LOGIN </a>
+
+      <!-- EJS Loop for sign in and sign up -->
+      <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
+        <% var log=locals.user %>
+        <% if(locals.user){ %>
+            <div id="toggle">
+                <a href=""><img src="/images/user.png" class="navbar-3" alt="" /></a>
+                <ul>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="/users/sign-out">Sign Out</a></li>
+                </ul>
+              </div>
+        <% } else {%>
+            <a class="navbar-login" href="/users/sign-in" target="_self"> LOGIN </a>
+        <%}%>
+      <%}%>
+      <!-- EJS Loop Ends -->
     </div>
   </nav>
 </header>

@@ -1,8 +1,11 @@
 $color_1: #c6b79b;
 $color_2: rgb(255, 255, 255);
+$color_3: #692e00;
+$color_4: rgb(255, 212, 168);
 $font-family_1: "Syne", sans-serif;
 $background-color_1: #5a1413;
 $background-color_2: #ffffff;
+$background-color_3: #692e00;
 $border-color_1: #ffffff;
 
 @import "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap";
@@ -141,6 +144,7 @@ $border-color_1: #ffffff;
     text-decoration: none;
   }
 }
+
 .search {
   border: none;
   height: 21px;
@@ -205,3 +209,35 @@ $border-color_1: #ffffff;
 .search-bar-input {
   width: 180px !important;
 }
+
+#toggle{
+  position: relative;
+  padding-right: 50px;
+  ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 0;
+    display: none;
+
+    li {
+      list-style: none;
+      padding: 8px 16px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &:hover{
+    ul {
+      display: block;
+    }
+  } 
+} 

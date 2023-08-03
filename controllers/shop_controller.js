@@ -59,4 +59,3 @@ module.exports.addProductsPage = async (req, res) => {
     title: "Product Add",
   });
 };
-  e
