@@ -34,15 +34,38 @@
 
     <div class="navbar-part-3">
       <div id="search-bar-div">
-        <input type="text" class="search-bar-input" />
-        <button onclick="closesearch()">
-          <img
-            src="/images/search.png"
-            id="search-icon"
-            class="search-icon"
-            alt=""
-          />
-        </button>
+        <div class="search-field">
+          <button onclick="closesearch()" class = "search-btth">
+            <img
+              src="/images/search.png"
+              id="search-icon"
+              class="search-icon"
+              alt=""
+            />
+          </button>
+          <input type="text" class="search-bar-input" />
+        </div>
+        <div id="search-results">
+          <ul class="result-list">
+            <li class="result-item">
+              <div class="result-name">Product Description</div>
+              <img src="../../assets/images/GOOG.svg" alt="" class="link-vector">
+            </li>
+            <li class="result-item">
+              <div class="result-name">Product Description</div>
+              <img src="../../assets/images/GOOG.svg" alt="" class="link-vector">
+            </li>
+            <li class="result-item">
+              <div class="result-name">Product Description</div>
+              <img src="../../assets/images/GOOG.svg" alt="" class="link-vector">
+            </li>
+            <li class="result-item">
+              <div class="result-name">Product Description</div>
+              <img src="../../assets/images/GOOG.svg" alt="" class="link-vector">
+              <!-- change to svg -->
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="elementContainer" id="search-div">
         <button onclick="clicksearch()">
