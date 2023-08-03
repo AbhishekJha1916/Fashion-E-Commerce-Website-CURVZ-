@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/css/product-details.css">
+<link rel="stylesheet" href="/css/product-details.css">
 <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 <title>Product Detailst</title>
 
@@ -6,16 +6,17 @@
 <div id="header">
     <h1 id="heading">Product Details</h1>
 </div>
-
+<%console.log(productdata)%>
 <div id="product">
     <div id="prod-img">
-        <img src="../assets/images/sweters.jpg" alt="" id="image">
+        <img src="/images/sweters.jpg" alt="" id="image">
     </div>
     <div id="prod-details">
-        <h1 id="detail-heading">Shadi Ka Kurta</h1>
+        <h1 id="detail-heading"><%=productdata.productName%></h1>
         <div id="price">
-            <span id="actual-price">$100</span>
-            <span id="orignal-price">$99</span>
+            
+            <span id="actual-price">$<%=productdata.price%></span>
+            <span id="orignal-price">$<%=productdata.MRP%></span>
         </div>
         <div id="star-rating">
             <p id="star-no">
@@ -31,9 +32,9 @@
             <p class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis labore animi ea provident dolores rerum, magni perspiciatis deleniti error consectetur quibusdam illum, atque perferendis! Minima ut repellat ex sed necessitatibus dolorem, vitae saepe velit expedita praesentium ipsam debitis corporis nam cum. Consequuntur, excepturi reiciendis. Doloribus sint reiciendis dolor suscipit voluptatum dicta, saepe repellat accusantium modi! Quia tempora debitis perspiciatis commodi!</p>
         </div>
         <div id="prod-options">
-            <img src="../assets/images/shopping.png" alt="" class="bttn-cart">
+            <img src="/images/shopping.png" alt="" class="bttn-cart">
             <span class="cart-no">4</span>
-            <img src="../assets/images/shopping.png" alt="" class="bttn-cart">
+            <img src="/images/shopping.png" alt="" class="bttn-cart">
             <div id="option1">
                 <div class="option-cart">Add to Cart</div>
                 <div class="option-cart">Buy Now</div>
@@ -41,11 +42,11 @@
         </div>
         <div id="account-actions">
                 <div class="option-account">
-                    <img src="../assets/images/shopping.png" alt="" class="bttn">
+                    <img src="/images/shopping.png" alt="" class="bttn">
                     <p class="account-option-desc">Add to Wishlist</p>
                 </div>
                 <div class="option-account">
-                    <img src="../assets/images/shopping.png" alt="" class="bttn">
+                    <img src="/images/shopping.png" alt="" class="bttn">
                     <p class="account-option-desc">Compare</p>
                 </div>
         </div>
@@ -53,23 +54,37 @@
 </div>
 
 <div id="product-views">
-    <img src="../assets/images/sweters.jpg" alt="" class="image-blur">
-    <img src="../assets/images/sweters.jpg" alt="" class="image-blur">
-    <img src="../assets/images/shopping.png" alt="" id="bttn-view">
+    <img src="/images/sweters.jpg" alt="" class="image-blur">
+    <img src="/images/sweters.jpg" alt="" class="image-blur">
+    <img src="/images/shopping.png" alt="" id="bttn-view">
 </div>
 
 <div id="detail-list">
     <div id="filters">
-        <div class="filter"><span class="fliter-desc">Description</span></div>
-        <div class="filter"><span class="fliter-desc">Specification</span></div>
-        <div class="filter"><span class="fliter-desc">Review</span></div>
+        <div class="filter" id="tab1"><button class="fliter-desc"  onclick="desclick(this.id);">Description</button></div>
+        <div class="filter" id="tab2"><button class="fliter-desc" onclick="specclick(this.id);">Specification</button></div>
+        <div class="filter" id="tab3"><button class="fliter-desc" onclick="revclick(this.id);">Review</button></div>
     </div>
 
     <div id="description">
-        <p class="desc-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, tempora voluptatem, consectetur ratione maiores eaque cumque cupiditate, sunt illo magni quasi exercitationem provident eos ab laboriosam eligendi optio quod fugiat.</p>
+        <p class="desc-content">Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, tempora voluptatem, consectetur ratione maiores eaque cumque cupiditate, sunt illo magni quasi exercitationem provident eos ab laboriosam eligendi optio quod fugiat.</p>
         <p class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum nobis voluptate labore accusantium laudantium assumenda accusamus numquam vitae, suscipit deleniti minus pariatur. Neque, suscipit dolore. Ducimus neque laboriosam, sint dolores beatae quia facere eos facilis excepturi distinctio voluptas itaque quos repellat, provident atque cupiditate?</p>
         <p class="desc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis excepturi odit. Id, molestias nemo eligendi nisi necessitatibus distinctio ea sit laboriosam quia aut quam ducimus vitae dolore voluptas quas autem. Nostrum laborum saepe cupiditate odit blanditiis fuga fugiat recusandae! Autem eos a architecto porro corrupti maiores doloremque, ducimus vero.</p>
         <p class="desc-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptate enim quasi, delectus consectetur laborum distinctio deserunt repellendus ea eius quas magnam veniam itaque alias quae consequatur iusto ipsam praesentium? Doloremque totam neque dignissimos, alias accusantium ex cupiditate quis voluptas placeat cumque eos voluptate ab sit nostrum iste eligendi repudiandae et. Excepturi necessitatibus, nostrum aliquid quod totam enim autem quos!</p>
+    </div>
+
+    <div id="specification" class="hide">
+        <p class="spec-content">Specification: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, tempora voluptatem, consectetur ratione maiores eaque cumque cupiditate, sunt illo magni quasi exercitationem provident eos ab laboriosam eligendi optio quod fugiat.</p>
+        <p class="spec-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum nobis voluptate labore accusantium laudantium assumenda accusamus numquam vitae, suscipit deleniti minus pariatur. Neque, suscipit dolore. Ducimus neque laboriosam, sint dolores beatae quia facere eos facilis excepturi distinctio voluptas itaque quos repellat, provident atque cupiditate?</p>
+        <p class="spec-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis excepturi odit. Id, molestias nemo eligendi nisi necessitatibus distinctio ea sit laboriosam quia aut quam ducimus vitae dolore voluptas quas autem. Nostrum laborum saepe cupiditate odit blanditiis fuga fugiat recusandae! Autem eos a architecto porro corrupti maiores doloremque, ducimus vero.</p>
+        <p class="spec-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptate enim quasi, delectus consectetur laborum distinctio deserunt repellendus ea eius quas magnam veniam itaque alias quae consequatur iusto ipsam praesentium? Doloremque totam neque dignissimos, alias accusantium ex cupiditate quis voluptas placeat cumque eos voluptate ab sit nostrum iste eligendi repudiandae et. Excepturi necessitatibus, nostrum aliquid quod totam enim autem quos!</p>
+    </div>
+
+    <div id="review" class="hide">
+        <p class="review-content">Review: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, tempora voluptatem, consectetur ratione maiores eaque cumque cupiditate, sunt illo magni quasi exercitationem provident eos ab laboriosam eligendi optio quod fugiat.</p>
+        <p class="review-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum nobis voluptate labore accusantium laudantium assumenda accusamus numquam vitae, suscipit deleniti minus pariatur. Neque, suscipit dolore. Ducimus neque laboriosam, sint dolores beatae quia facere eos facilis excepturi distinctio voluptas itaque quos repellat, provident atque cupiditate?</p>
+        <p class="review-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis excepturi odit. Id, molestias nemo eligendi nisi necessitatibus distinctio ea sit laboriosam quia aut quam ducimus vitae dolore voluptas quas autem. Nostrum laborum saepe cupiditate odit blanditiis fuga fugiat recusandae! Autem eos a architecto porro corrupti maiores doloremque, ducimus vero.</p>
+        <p class="review-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptate enim quasi, delectus consectetur laborum distinctio deserunt repellendus ea eius quas magnam veniam itaque alias quae consequatur iusto ipsam praesentium? Doloremque totam neque dignissimos, alias accusantium ex cupiditate quis voluptas placeat cumque eos voluptate ab sit nostrum iste eligendi repudiandae et. Excepturi necessitatibus, nostrum aliquid quod totam enim autem quos!</p>
     </div>
 </div>
 
@@ -86,3 +101,5 @@
         <div class="box"></div>
     </div>
 </div>
+
+<script src="/js/product_details.js"></script>
