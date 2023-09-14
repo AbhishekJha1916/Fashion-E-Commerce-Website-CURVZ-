@@ -17,12 +17,12 @@
 </head>
 
 <body>
-  <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
+  <% if(!(title==="Sign up" || title==="Sign in" || title === "adminDashboard" ) ) {%>
     <%- include('./components/_header');%>
   <%}%>
   <!-- Variable content that we want to show -->
   <%- body %>
-  <% if(!(title==="Sign up" || title==="Sign in" ) ) {%>
+  <% if(!(title==="Sign up" || title==="Sign in" || title === "adminDashboard" ) ) {%>
     <%- include('./components/_footer');%>
   <%}%>
 
